@@ -1,0 +1,55 @@
+// FONTS
+
+@font-face {
+  font-family: "Jost";
+  src: url(./fonts/Jost-VariableFont_wght.ttf);
+}
+
+@font-face {
+  font-family: "Lufga";
+  src: url(./fonts/LufgaRegular.ttf);
+}
+
+//VARIABLES
+
+//COLORS
+
+:root {
+  --pink400: #fddad3;
+  --pink300: #ffede9;
+  --white400: #fffbfa;
+}
+
+//PADDINGS
+:root {
+  --padding-xs: 5px;
+  // --padding-lg: 30px;
+}
+
+//MARGINS
+:root {
+  // --margin-md: 16px;
+  --margin-sm:20px;
+  --margin-lg: 40px;
+  --margin-xl:50px;
+  --margin-2xl:80px;
+}
+
+//GAPS
+:root {
+  --gap-xs:10px;
+  --gap--sm:20px
+  --gap-md: 30px;
+  --gap-lg: 40px;
+}
+//FONT-SIZES
+:root {
+  --fontSize-md: 16px;
+  --fontSize-lg: 30px;
+}
+
+//BORDER-RADIUS
+// :root {
+//   // --bdRadius-md: 16px;
+//   // --bdRadius-lg: 30px;
+// }

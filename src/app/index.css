@@ -1,0 +1,63 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  min-height: 100%;
+  height: auto;
+  width: 100%;
+  overflow-x: hidden;
+  background: red;
+}
+
+li {
+  list-style-type: none;
+}
+
+a,
+a:hover,
+a:visited {
+  text-decoration: none;
+  cursor: pointer;
+  color: inherit;
+}
+
+@font-face {
+  font-family: "Jost";
+  src: url(./fonts/Jost-VariableFont_wght.ttf);
+}
+@font-face {
+  font-family: "Lufga";
+  src: url(./fonts/LufgaRegular.ttf);
+}
+:root {
+  --pink400: #fddad3;
+  --pink300: #ffede9;
+  --white400: #fffbfa;
+}
+
+:root {
+  --padding-xs: 5px;
+}
+
+:root {
+  --margin-sm:20px;
+  --margin-lg: 40px;
+  --margin-xl:50px;
+  --margin-2xl:80px;
+}
+
+:root {
+  --gap-xs:10px;
+  --gap--sm:20px
+  --gap-md: 30px;
+  --gap-lg: 40px;
+}
+
+:root {
+  --fontSize-md: 16px;
+  --fontSize-lg: 30px;
+}/*# sourceMappingURL=index.css.map */

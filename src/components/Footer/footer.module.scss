@@ -1,0 +1,137 @@
+.footer {
+  background: var(--secondary-color);
+  position: relative;
+  padding-top: 90px;
+  padding-bottom: 10px;
+  overflow-y: hidden;
+  .imgRectangle {
+    position: absolute;
+    bottom: -40px;
+    left: 30px;
+  }
+  .footerContainer {
+    width: 70%;
+    margin: auto 250px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    .footerTop {
+      display: flex;
+      gap: 50px;
+
+      .footerContact {
+        height: 100%;
+        .footerAddress {
+          .logoContainer {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+
+            h2 {
+              font-family: "Jost", sans-serif;
+              font-size: 40;
+            }
+          }
+
+          h5 {
+            font-size: 14px;
+            font-weight: 200;
+            line-height: 30px;
+          }
+        }
+        .footerNewsletter {
+          h5 {
+            font-size: 15px;
+            font-weight: 500;
+            text-transform: capitalize;
+            line-height: 24px;
+          }
+
+          .input {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            border: 1px solid var(--primary-color);
+            border-radius: 10px;
+            background: var(--primary-color);
+            padding: 5px;
+
+            p {
+              font-size: 14px;
+            }
+          }
+        }
+      }
+      .posts {
+        h3 {
+          font-size: 18px;
+        }
+        .postsContainer {
+          display: flex;
+          flex-direction: column;
+          gap: 15px;
+          padding-top: 22px;
+          .postContainer {
+            display: flex;
+            gap: 20px;
+            align-items: center;
+
+            .textContainer {
+              display: flex;
+              flex-direction: column;
+              gap: 3px;
+
+              h5 {
+                font-size: 15px;
+                text-transform: capitalize;
+                font-weight: 500;
+              }
+              h6 {
+                font-size: 12px;
+                font-weight: 400;
+              }
+            }
+          }
+        }
+      }
+      .links,
+      .stores,
+      .menuFooter {
+        h3 {
+          font-size: 16px;
+        }
+        ul {
+          display: flex;
+          flex-direction: column;
+          gap: 12px;
+          padding-top: 24px;
+
+          li {
+            font-size: 13px;
+          }
+        }
+      }
+    }
+    // .footerLine {
+    //   margin-top: 10px;
+    //   margin-bottom: 10px;
+    // }
+    .footerBottom {
+      display: flex;
+      justify-content: space-between;
+      font-size: 14px;
+      text-transform: capitalize;
+
+      .paiements {
+        display: flex;
+        gap: 10px;
+      }
+    }
+  }
+  .pawImg {
+    position: absolute;
+    right: -50px;
+    top: 20px;
+    bottom: 20px;
+  }
+}

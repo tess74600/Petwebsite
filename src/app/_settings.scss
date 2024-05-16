@@ -1,0 +1,26 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100%;
+  height: auto;
+  width: 100%;
+  // background: var(--pink300);
+  overflow-x: hidden;
+  background: red;
+}
+
+li {
+  list-style-type: none;
+}
+
+a,
+a:hover,
+a:visited {
+  text-decoration: none;
+  cursor: pointer;
+  color: inherit;
+}
