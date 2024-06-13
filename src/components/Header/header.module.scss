@@ -1,8 +1,9 @@
 .headerContainer {
-  margin: var(--margin-sm) var(--margin-2xl);
-  position: relative;
+  border-bottom: 1px var(--grey400) solid;
+
   .flexContainer {
-    width: 100%;
+    width: 90%;
+    margin: var(--margin-sm) auto;
     display: flex;
     align-items: center;
 
@@ -10,48 +11,41 @@
       display: flex;
       align-items: center;
       gap: var(--gap-xs);
+
       h2 {
         font-family: "Jost", sans-serif;
         text-transform: capitalize;
-        font-size: var(--fontSize-lg);
+        font-size: var(--fontSize-md);
       }
     }
 
     nav {
       margin-left: var(--margin-lg);
+      font-family: "Lufga", sans-serif;
       display: flex;
       align-items: center;
-      width: 100%;
-      justify-content: space-between;
-      font-family: "Lufga", sans-serif;
+      gap: 672px;
+      font-size: var(--fontSize-xs);
+
+      @media screen and (max-width: 1440px) {
+        gap: 250px;
+      }
 
       .navLeft {
-        ul {
+        gap: var(--gap-lg);
+        display: flex;
+        align-items: center;
+        li {
           display: flex;
-          gap: var(--gap-lg);
-          li {
-            font-size: var(--fontSize-md);
-            padding-right: var(--padding-xs);
-          }
+          gap: var(--gap-2xs);
         }
       }
 
       .navRight {
         display: flex;
-        align-items: center;
-
+        gap: var(--gap-md);
         .login {
-          margin-right: var(--margin-xl);
-
-          a {
-            text-decoration: underline;
-          }
-        }
-
-        .imgContainer {
-          display: flex;
-          gap: var(-gap--md);
-          align-items: center;
+          text-decoration: underline;
         }
       }
     }

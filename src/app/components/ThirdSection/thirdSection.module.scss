@@ -1,0 +1,14 @@
+.thirdSectionContainer {
+  background: var(--white400);
+  .logosContainer {
+    display: flex;
+
+    gap: var(--gap-2xl);
+    background: white;
+    justify-content: space-around;
+    @media screen and (max-width: 1440px) {
+      gap: var(--gap-xl);
+      padding: 40px;
+    }
+  }
+}

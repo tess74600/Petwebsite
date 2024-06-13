@@ -1,0 +1,123 @@
+.cardContainer {
+  width: 300px;
+  height: 409px;
+  border: 1px var(--black400) solid;
+  border-radius: var(--bdRadius-md);
+  display: flex;
+  overflow: hidden;
+  flex-direction: column;
+  position: relative;
+
+  @media screen and (max-width: 1440px) {
+    width: 250px;
+    height: 350px;
+  }
+
+  .hoverContainer {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    gap: var(--gap-xs);
+    top: 19px;
+    left: 19px;
+    .iconsContainer {
+      width: 45px;
+      height: 45px;
+      border-radius: var(--bdRadius-xs);
+      background: var(--pink300);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      .icon {
+        cursor: pointer;
+      }
+    }
+  }
+  .watchList {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+  }
+
+  .topCard {
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+#topCard2 {
+  background: rgb(170, 248, 242);
+  overflow: hidden;
+}
+#topCard3 {
+  background: rgb(236, 239, 187);
+}
+#topCard4 {
+  overflow: hidden;
+  #cardImg4 {
+    width: 300px;
+    height: auto;
+  }
+}
+#topCard5 {
+  background: rgb(243, 228, 239);
+}
+#topCard6 {
+  background: rgb(236, 239, 187);
+}
+#topCard7 {
+  background: rgb(170, 248, 242);
+}
+#topCard8 {
+  background: rgb(215, 243, 214);
+}
+
+.bottomCard {
+  border-top: 1px var(--black400) solid;
+  width: 100%;
+  padding: var(--margin-2xs) var(--margin-xs) 0 var(--margin-xs);
+
+  h5 {
+    font-size: var(--fontSize-xs);
+    color: var(--grey400);
+  }
+
+  h6 {
+    margin-bottom: var(--margin-xs);
+    font-size: var(--fontSizexs);
+  }
+
+  .bottomContainer {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: var(--margin-xs);
+
+    .priceContainer {
+      .price {
+        font-size: var(--fontSize-xs);
+        position: relative;
+
+        &::after {
+          content: "$89";
+          color: var(--grey400);
+          position: absolute;
+          top: -1%;
+          text-decoration: line-through;
+        }
+      }
+    }
+
+    .likeContainer {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: var(--fontSize-xs);
+      gap: var(--gap-2xs);
+    }
+  }
+}

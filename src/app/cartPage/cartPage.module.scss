@@ -1,0 +1,104 @@
+.cartPageContainer {
+  font-family: "Lufga";
+  padding-top: var(--padding-2xl);
+  display: flex;
+  padding: 90px 50px;
+  gap: 50px;
+  .products {
+    width: 60%;
+    margin-left: 60px;
+
+    .productTitles {
+      display: flex;
+      // gap: 50px;
+      margin-bottom: 20px;
+      h4 {
+        font-size: 20px;
+        margin-right: 60px;
+
+        &:first-of-type {
+          margin-right: 360px;
+        }
+      }
+    }
+    .productsContainer {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+  }
+  .cartTotal {
+    width: 35%;
+
+    h3 {
+      font-size: var(--fontSize-sm);
+      padding-bottom: 15px;
+    }
+
+    .cartTotalContainer {
+      border: 1px solid var(--black400);
+      border-radius: var(--bdRadius-sm);
+      padding: var(--padding-md);
+      h5 {
+        font-size: 16px;
+      }
+
+      p {
+        font-size: 14px;
+      }
+
+      h6 {
+        font-size: 13px;
+      }
+      .cashback,
+      .freeShipping,
+      .enjoyProduct {
+        border: 1px solid var(--black400);
+        border-radius: var(--bdRadius-xs);
+      }
+
+      .cashback {
+        text-align: center;
+        padding: 15px 0;
+        margin-bottom: var(--padding-xs);
+      }
+      .freeShipping,
+      .enjoyProduct,
+      .save {
+        display: flex;
+        gap: 10px;
+      }
+      .freeShipping {
+        margin-bottom: var(--padding-xs);
+      }
+
+      .freeShipping,
+      .enjoyProduct {
+        padding: 15px 0 15px var(--padding-xs);
+      }
+
+      .enjoyProduct {
+        .textContainer {
+          width: 75%;
+        }
+        margin-bottom: 37px;
+      }
+
+      .save {
+        border-bottom: 1px var(--grey400) solid;
+        padding-bottom: 13px;
+      }
+
+      .totalAmount {
+        padding-top: 24px;
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 29px;
+
+        span {
+          font-size: 24px;
+        }
+      }
+    }
+  }
+}

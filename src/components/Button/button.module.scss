@@ -1,0 +1,72 @@
+.button {
+  display: flex;
+  text-transform: capitalize;
+  gap: var(--gap-xs);
+  align-items: center;
+}
+
+.round {
+  border-radius: 25px;
+}
+.ovale {
+  border-radius: 15px;
+}
+.rectangle {
+  border-radius: 10px;
+
+  font-size: var(--fontSize-md);
+}
+.black {
+  background: var(--black400);
+  color: var(--white400);
+  border-color: var(--black400);
+}
+
+.white,
+.transparent {
+  border-color: var(--black400);
+  color: var(--black400);
+}
+.white {
+  background: var(--white400);
+}
+.transparent {
+  background: transparent;
+}
+.border {
+  border-width: 1px;
+  border-style: solid;
+}
+.XL {
+  padding: 8px 100px;
+  justify-content: center;
+}
+
+.L {
+  padding: 15px 30px;
+  width: 200px;
+  font-size: 15px;
+}
+
+.M {
+  padding: 13px 32px;
+  font-size: 15px;
+  justify-content: center;
+}
+
+.S {
+  padding: 8px 25px;
+}
+
+.XS {
+  padding: 5px 12px;
+  font-size: 14px;
+}
+
+.XXS {
+  border-radius: 1500px;
+  width: 30px;
+  height: 30px;
+  padding: 6px;
+  justify-content: center;
+}

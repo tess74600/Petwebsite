@@ -1,0 +1,36 @@
+.bannerContainer {
+  position: relative;
+
+  .imgContainer {
+    height: 250px;
+    overflow: hidden;
+    filter: brightness(30%);
+  }
+
+  .textContent {
+    color: var(--white400);
+    position: absolute;
+    bottom: 40%;
+    left: 50%;
+    transform: translateX(-50%);
+
+    h2 {
+      font-size: var(--fontSize-lg);
+      font-family: "LufgaSemiBold";
+    }
+    .textContainer {
+      display: flex;
+      align-items: center;
+      gap: var(--gap-xs);
+
+      h6 {
+        font-size: var(--fontSize-xs);
+        font-family: "Lufga";
+      }
+    }
+  }
+
+  #cartPageBannerImg {
+    object-position: 0 -300px;
+  }
+}

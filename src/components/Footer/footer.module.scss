@@ -1,137 +1,185 @@
 .footer {
-  background: var(--secondary-color);
+  background: var(--pink400);
   position: relative;
-  padding-top: 90px;
-  padding-bottom: 10px;
+  border-top: 1px var(--grey400) solid;
   overflow-y: hidden;
-  .imgRectangle {
+  font-family: "Lufga", sans-serif;
+  overflow-x: hidden;
+  .catFood {
     position: absolute;
-    bottom: -40px;
-    left: 30px;
+    bottom: -6px;
+    left: 48px;
+    background: transparent;
+
+    @media screen and (max-width: 1440px) {
+      bottom: -110px;
+      left: 550px;
+    }
   }
   .footerContainer {
-    width: 70%;
-    margin: auto 250px;
     display: flex;
     flex-direction: column;
-    gap: 40px;
+    gap: var(--gap-lg);
+
     .footerTop {
       display: flex;
-      gap: 50px;
+      gap: var(--gap-xl);
 
-      .footerContact {
-        height: 100%;
-        .footerAddress {
-          .logoContainer {
-            display: flex;
-            align-items: center;
-            gap: 10px;
+      @media screen and (max-width: 1440px) {
+        gap: var(--gap-sm);
+      }
 
-            h2 {
-              font-family: "Jost", sans-serif;
-              font-size: 40;
-            }
-          }
+      .logoContainer {
+        display: flex;
+        align-items: center;
+        margin: var(--margin-xl) 0 var(--margin-sm) 0;
+        gap: var(--gap-xs);
 
-          h5 {
-            font-size: 14px;
-            font-weight: 200;
-            line-height: 30px;
-          }
+        @media screen and (max-width: 1440px) {
+          margin-top: var(--margin-md);
         }
-        .footerNewsletter {
-          h5 {
-            font-size: 15px;
-            font-weight: 500;
-            text-transform: capitalize;
-            line-height: 24px;
-          }
-
-          .input {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            border: 1px solid var(--primary-color);
-            border-radius: 10px;
-            background: var(--primary-color);
-            padding: 5px;
-
-            p {
-              font-size: 14px;
-            }
-          }
+        h2 {
+          font-family: "Jost", sans-serif;
+          font-size: var(--fontSize-lg);
+          font-weight: 600;
         }
       }
-      .posts {
-        h3 {
-          font-size: 18px;
-        }
-        .postsContainer {
-          display: flex;
-          flex-direction: column;
-          gap: 15px;
-          padding-top: 22px;
-          .postContainer {
-            display: flex;
-            gap: 20px;
-            align-items: center;
-
-            .textContainer {
-              display: flex;
-              flex-direction: column;
-              gap: 3px;
-
-              h5 {
-                font-size: 15px;
-                text-transform: capitalize;
-                font-weight: 500;
-              }
-              h6 {
-                font-size: 12px;
-                font-weight: 400;
-              }
-            }
-          }
-        }
+      h5,
+      h4 {
+        font-size: var(--fontSize-xs);
       }
-      .links,
-      .stores,
-      .menuFooter {
-        h3 {
-          font-size: 16px;
-        }
-        ul {
-          display: flex;
-          flex-direction: column;
-          gap: 12px;
-          padding-top: 24px;
+      h5 {
+        line-height: 30px;
+      }
 
-          li {
-            font-size: 13px;
+      h4 {
+        text-transform: capitalize;
+        font-family: "LufgaMedium", sans-serif;
+      }
+      h3 {
+        font-size: var(--fontSize-sm);
+        font-family: "LufgaSemiBold", sans-serif;
+      }
+      .footerNewsletter {
+        margin-top: var(--margin-md);
+        .input {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          border: 1px solid var(--pink300);
+          border-radius: var(--bdRadius-xs);
+          background: var(--pink300);
+          padding: 15px;
+          margin-top: var(--margin-2xs);
+          width: 299px;
+          height: 45px;
+
+          @media screen and (max-width: 1440px) {
+            width: 200px;
+          }
+          p {
+            font-size: var(--fontSize-xs);
           }
         }
       }
     }
-    // .footerLine {
-    //   margin-top: 10px;
-    //   margin-bottom: 10px;
-    // }
-    .footerBottom {
-      display: flex;
-      justify-content: space-between;
-      font-size: 14px;
-      text-transform: capitalize;
 
-      .paiements {
-        display: flex;
-        gap: 10px;
+    .posts,
+    .stores,
+    .links,
+    .menuFooter {
+      margin-top: var(--margin-2xl);
+
+      @media screen and (max-width: 1440px) {
+        margin-top: var(--margin-lg);
       }
+    }
+    .posts {
+      .postsContainer {
+        display: flex;
+        flex-direction: column;
+        gap: var(--gap-xs);
+        padding-top: var(--margin-xs);
+
+        .postContainer {
+          display: flex;
+          gap: var(--gap-xs);
+          align-items: center;
+
+          .imgContainer {
+            border: 1px var(--black400) solid;
+            background: var(--white400);
+            border-radius: var(--bdRadius-xs);
+            overflow: hidden;
+            width: 60px;
+            height: 60px;
+            .img60 {
+              width: 60px;
+              height: auto;
+            }
+          }
+
+          .textContainer {
+            display: flex;
+            flex-direction: column;
+            gap: var(--gap-2xs);
+
+            h6 {
+              font-size: var(--fontSize-2xs);
+            }
+          }
+        }
+      }
+    }
+    .links,
+    .stores,
+    .menuFooter {
+      ul {
+        display: flex;
+        flex-direction: column;
+        gap: var(--gap-xs);
+        padding-top: var(--margin-sm);
+
+        li {
+          font-size: var(--fontSize-sm);
+
+          @media screen and (max-width: 1440px) {
+            font-size: var(--fontSize-xs);
+          }
+        }
+      }
+    }
+
+    .stores {
+      padding: 0 var(--margin-2xl) 0 var(--margin-2xl);
+    }
+    .links {
+      padding-right: var(--margin-2xl);
     }
   }
-  .pawImg {
-    position: absolute;
-    right: -50px;
-    top: 20px;
-    bottom: 20px;
+}
+
+.footerBottom {
+  display: flex;
+  justify-content: space-between;
+  font-size: var(--fontSize-xs);
+  padding: var(--margin-xs) 0;
+  text-transform: capitalize;
+  border-top: 1px var(--black400) solid;
+
+  .paiements {
+    display: flex;
+    gap: var(--gap-sm);
+  }
+}
+
+.pawImg {
+  position: absolute;
+  right: -50px;
+  top: 20px;
+  bottom: 20px;
+
+  @media screen and (max-width: 1440px) {
+    right: -95px;
   }
 }

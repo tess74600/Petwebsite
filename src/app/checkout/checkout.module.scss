@@ -1,0 +1,245 @@
+.checkoutContainer {
+  display: flex;
+  padding-left: 200px;
+  padding-top: var(--padding-2xl);
+  gap: var(--gap-md);
+  font-family: "Lufga";
+  h3 {
+    font-family: "LufgaSemiBold";
+    font-size: var(--fontSize-sm);
+    padding-bottom: 15px;
+  }
+  .formContainer {
+    width: 50%;
+    padding-bottom: 70px;
+
+    h4,
+    label {
+      font-weight: bold;
+    }
+
+    h4,
+    label {
+      font-size: var(--fontSize-xs);
+      padding-bottom: 7px;
+      padding-top: 25px;
+    }
+
+    input[type="text"],
+    input[type="mail"],
+    input[type="tel"],
+    input[type="phone"],
+    select,
+    textarea {
+      border-radius: var(--bdRadius-xs);
+      padding: var(--padding-xs);
+      width: 100%;
+      font-family: "Lufga";
+    }
+
+    input[type="submit"] {
+      border-radius: var(--bdRadius-2xs);
+      padding: 5px 15px;
+      width: 20%;
+      cursor: pointer;
+      transition: 1.25s ease;
+
+      &:hover {
+        transform: scale(1.25);
+      }
+    }
+    .customer,
+    .address {
+      display: flex;
+      flex-direction: column;
+      gap: var(--gap-xs);
+    }
+
+    .identity {
+      display: flex;
+      gap: var(--gap-md);
+
+      div {
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+      }
+    }
+
+    .checkbox:first-of-type {
+      padding: var(--padding-sm) 0 var(--padding-2xs) 0;
+    }
+    .checkbox label {
+      font-size: var(--fontSize-2xs);
+      padding-left: 7px;
+    }
+    input[type="checkbox"] {
+      border-radius: 4px;
+      height: 15px;
+      width: 15px;
+      background: var(--pink300);
+      border: 1px solid var(--black400);
+    }
+
+    input[type="checkbox"]:checked {
+      background: var(--grey400);
+      margin: 0px;
+      position: relative;
+    }
+    .chevron {
+      position: relative;
+    }
+    .chevronSVG {
+      position: absolute;
+      top: 50%;
+      left: 95%;
+      transform: translateY(-50%);
+      pointer-events: none;
+    }
+    .error {
+      color: red;
+    }
+  }
+
+  .order {
+    width: 40%;
+
+    .globalContainer {
+      border: 1px solid var(--black400);
+      border-radius: var(--bdRadius-sm);
+      padding: var(--padding-md);
+
+      h4 {
+        font-size: 16px;
+        font-weight: 500;
+      }
+
+      .subtotal {
+        font-size: 16px;
+        display: flex;
+        justify-content: space-between;
+      }
+
+      .subtotal,
+      .shipping {
+        padding: var(--padding-2xs) 0;
+        border-bottom: 1px var(--grey400) solid;
+      }
+
+      .shipping {
+        display: flex;
+        flex-direction: column;
+        gap: var(--gap-xs);
+
+        h4 {
+          padding-bottom: 10px;
+        }
+        label {
+          font-size: 14px;
+        }
+
+        .flatRate {
+          display: flex;
+          justify-content: space-between;
+        }
+      }
+
+      .total {
+        padding-top: var(--padding-2xs);
+        display: flex;
+        justify-content: space-between;
+        span {
+          font-size: 24px;
+          font-weight: 500;
+        }
+      }
+
+      .bankTransfer {
+        padding-top: 20px;
+
+        p {
+          padding: 15px 0;
+        }
+      }
+
+      .payPal {
+        display: flex;
+        gap: var(--gap-xs);
+        padding: 10px 0 var(--padding-xs) 0;
+        border-bottom: 1px var(--grey400) solid;
+
+        #imgPaypal {
+          width: 90px;
+          height: auto;
+        }
+        span {
+          font-size: 12px;
+          text-decoration: underline;
+        }
+      }
+
+      .cgv {
+        display: flex;
+        align-items: end;
+        padding-bottom: var(--padding-xs);
+        label {
+          font-size: 13px;
+          padding-top: 20px;
+          padding-left: 12px;
+        }
+        .cgvCheckout {
+          appearance: none;
+          border: 1px black solid;
+          width: 16px;
+          height: 16px;
+          border-radius: 4px;
+
+          &:checked {
+            background: black;
+          }
+        }
+      }
+      form {
+        display: flex;
+        align-items: center;
+        label {
+          padding-left: 10px;
+        }
+        .orderCheckout {
+          appearance: none;
+          border: 1px black solid;
+          width: 16px;
+          height: 16px;
+          border-radius: 150%;
+          position: relative;
+
+          &:checked::after {
+            content: "";
+            position: absolute;
+            width: 10px;
+            height: 10px;
+            border-radius: 150%;
+            background: black;
+            top: 15%;
+            left: 12%;
+          }
+        }
+      }
+
+      p {
+        font-size: 13px;
+        line-height: 20px;
+        // word-spacing: 5px;
+        width: 82%;
+
+        &:last-of-type {
+          padding-top: var(--padding-xs);
+
+          span {
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+  }
+}

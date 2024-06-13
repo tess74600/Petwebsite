@@ -1,73 +1,82 @@
 import React from "react";
 import styles from "./header.module.scss";
-import Image from "next/image";
-import logo from "./Logo.svg";
-import search from "./search.svg";
-import heart from "./heart1.svg";
-import shopping from "./shopping-cart 1.svg";
-import lines from "./lines.svg";
+import Link from "next/link";
+
+// SVG
+import Logo from "./assets/Logo.svg";
+import Search from "./assets/search.svg";
+import Heart from "./assets/heart1.svg";
+import Shopping from "./assets/shopping-cart 1.svg";
+import Lines from "./assets/lines.svg";
 const Header = () => {
   return (
     <>
       <header className={styles.headerContainer}>
         <div className={styles.flexContainer}>
           <div className={styles.logoContainer}>
-            <Image src={logo} width={41.82} height={44} alt="logo" />
+            <Logo alt="logo" />
             <h2>petperks</h2>
           </div>
           <nav>
-            <div className={styles.navLeft}>
-              <ul>
+            <ul className={styles.navLeft}>
+              <Link href="/">
                 <li>
-                  <a href="">
-                    Home <span>✦</span>
-                  </a>
+                  Home
+                  <span>✦</span>
                 </li>
+              </Link>
+              <Link href="/shopStandard">
                 <li>
-                  <a href="">
-                    Shop <span>✦</span>
-                  </a>
+                  Shop
+                  <span>✦</span>
                 </li>
+              </Link>
+              <Link href="/page404">
                 <li>
-                  <a href="">
-                    Blog <span>✦</span>
-                  </a>
+                  Blog
+                  <span>✦</span>
                 </li>
-                <li>
-                  <a href="">
-                    Portfolio <span>✦</span>
-                  </a>
-                </li>
-                <li>
-                  <a href="">
-                    Pages <span>✦</span>
-                  </a>
-                </li>
-              </ul>
-            </div>
-            <div className={styles.navRight}>
-              <div className={styles.login}>
-                <a href="">Login/Register</a>
-              </div>
-              <div className={styles.imgContainer}>
-                <a href="">
-                  <Image src={search} alt="search" width={18} height={18} />
-                </a>
-                <a href="">
-                  <Image src={heart} alt="heart" width={20} height={20} />
-                </a>
-                <a href="">
-                  <Image src={shopping} alt="heart" width={20} height={20} />
-                </a>
+              </Link>
 
+              <li>
+                <a href="">Portfolio</a>
+                <span>✦</span>
+              </li>
+              <li>
+                <a href="">Pages</a>
+                <span>✦</span>
+              </li>
+            </ul>
+            <ul className={styles.navRight}>
+              <li>
+                <a href="" className={styles.login}>
+                  Login/Register
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  <Search alt="search" />
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  <Heart alt="heart" />
+                </a>
+              </li>
+              <Link href="/checkout">
+                <li>
+                  <Shopping alt="shopping" />
+                </li>
+              </Link>
+              <li>
                 <a
                   href="
               "
                 >
-                  <Image src={lines} width={30} height={13} alt="lines" />
+                  <Lines alt="lines" />
                 </a>
-              </div>
-            </div>
+              </li>
+            </ul>
           </nav>
         </div>
       </header>

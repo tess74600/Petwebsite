@@ -1,0 +1,181 @@
+.secondSectionContainer {
+  font-family: "Lufga";
+  position: relative;
+
+  .whiteContainer {
+    background: var(--white400);
+  }
+  .productCategory {
+    @media screen and (max-width: 1440px) {
+      padding: var(--padding-2xl) 0;
+    }
+
+    .title {
+      margin-bottom: var(--margin-md);
+      display: flex;
+      align-items: center;
+      text-transform: capitalize;
+      font-size: var(--fontSize-lg);
+      justify-content: space-between;
+
+      .rightArrow {
+        margin-left: var(--margin-sm);
+      }
+    }
+
+    .cardsContainer {
+      display: flex;
+      gap: var(--gap-md);
+      #dog {
+        background: #ffddd6;
+      }
+
+      #cat {
+        background: #ffe7c2;
+      }
+      #rabbit {
+        background: #d8f3e5;
+      }
+      #parrot {
+        background: #def7ff;
+      }
+      #hamster {
+        background: #efe9ff;
+      }
+      .card {
+        width: 234px;
+        height: 200px;
+        border-radius: var(--bdRadius-md);
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-top: var(--padding-2xs);
+
+        .cardTitle {
+          font-family: "Lufga";
+          font-size: var(--fontSize-sm);
+        }
+
+        .cardImage {
+          width: 234px;
+          height: auto;
+        }
+      }
+    }
+  }
+  .pawImg {
+    position: absolute;
+    top: 209px;
+    transform: scaleX(-1);
+    @media screen and (max-width: 1440px) {
+      left: -70px;
+    }
+  }
+  .petCareServices {
+    background: var(--pink300);
+    padding: var(--padding-2xl) 0;
+
+    .petCareServicesContainer {
+      margin: 0 auto;
+      display: flex;
+      gap: var(--gap-md);
+      .leftContainer {
+        text-transform: capitalize;
+        h2 {
+          font-size: 55px;
+          font-weight: 600;
+          line-height: 65px;
+          margin-bottom: var(--margin-xs);
+        }
+        .leftContainerContent {
+          display: flex;
+          border-bottom: 1px var(--grey400) solid;
+          justify-content: space-between;
+          padding: var(--padding-xs) 0;
+          &:first-of-type {
+            color: #fe8f90;
+          }
+
+          &:last-of-type {
+            border: none;
+          }
+          h5 {
+            font-size: var(--fontSize-sm);
+          }
+          .arrow:first-of-type {
+            color: #fe8f90;
+          }
+        }
+      }
+
+      .centralContainer {
+        border: 1px var(--black400) solid;
+        border-radius: var(--bdRadius-md);
+        width: 410px;
+        padding: var(--padding-md);
+        display: flex;
+        flex-direction: column;
+
+        h3 {
+          padding-left: var(--padding-lg);
+          font-size: var(--fontSize-sm);
+          text-transform: capitalize;
+          position: relative;
+          margin-bottom: var(--margin-xs);
+
+          &::before {
+            content: url(./assets/grooming.svg);
+            position: absolute;
+            left: 1%;
+          }
+        }
+
+        p {
+          font-size: var(--fontSize-sm);
+          margin-bottom: var(--margin-xl);
+          line-height: 30px;
+        }
+      }
+
+      .rightContainer {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        .rightContainerTop {
+          .bouvier {
+            border-radius: 0 var(--bdRadius-lg) 0 0;
+          }
+        }
+
+        .rightContainerBottom {
+          background: #ffa048;
+          height: 219px;
+          width: 410px;
+          display: flex;
+          border-radius: var(--bdRadius-md);
+          text-transform: uppercase;
+          color: var(--white400);
+          font-size: var(--fontSize-xs);
+          align-items: end;
+          justify-content: center;
+
+          .buttonContainer {
+            width: 50px;
+            height: 50px;
+            background: var(--white400);
+            border-radius: var(--bdRadius-xl);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0 var(--margin-xs) var(--margin-sm) var(--margin-sm);
+          }
+          h5 {
+            margin: 0 var(--margin-xs) var(--margin-md) 0;
+          }
+        }
+      }
+    }
+  }
+}

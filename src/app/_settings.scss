@@ -8,9 +8,8 @@ body {
   min-height: 100%;
   height: auto;
   width: 100%;
-  // background: var(--pink300);
+  background: var(--pink300);
   overflow-x: hidden;
-  background: red;
 }
 
 li {
@@ -23,4 +22,33 @@ a:visited {
   text-decoration: none;
   cursor: pointer;
   color: inherit;
+}
+input[type="text"],
+input[type="mail"],
+input[type="tel"],
+input[type="phone"],
+input[type="submit"],
+select,
+textarea {
+  appearance: none;
+  background: none;
+  border: 1px black solid;
+}
+
+textarea::placeholder,
+input::placeholder {
+  color: black;
+}
+
+textarea {
+  resize: none;
+}
+
+input {
+  display: inline;
+}
+
+input[type="checkbox"],
+input[type="submit"] {
+  appearance: none;
 }

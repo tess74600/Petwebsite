@@ -1,0 +1,30 @@
+.fourthSectionContainer {
+  padding: var(--padding-2xl) 0;
+  font-family: "Lufga";
+
+  @media screen and (max-width: 1440px) {
+    padding: var(--padding-xl) 0;
+  }
+  .titleContent {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: var(--margin-lg);
+
+    h2 {
+      font-size: var(--fontSize-xl);
+      text-transform: capitalize;
+    }
+
+    .buttonsContainer {
+      margin-top: var(--margin-xs);
+      display: flex;
+      gap: var(--gap-sm);
+    }
+  }
+
+  .cardsContainer {
+    display: flex;
+    gap: var(--gap-xl);
+    flex-wrap: wrap;
+  }
+}

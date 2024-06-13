@@ -10,46 +10,80 @@
   src: url(./fonts/LufgaRegular.ttf);
 }
 
+@font-face {
+  font-family: "LufgaSemiBold";
+  src: url(./fonts/LufgaSemiBold.ttf);
+}
+
+@font-face {
+  font-family: "LufgaMedium";
+  src: url(./fonts/LufgaMedium.ttf);
+}
+
 //VARIABLES
 
 //COLORS
 
 :root {
+  --pink600: #fe8f90;
+  --pink500: #e44e70;
   --pink400: #fddad3;
   --pink300: #ffede9;
   --white400: #fffbfa;
+  --grey400: rgb(151, 149, 149);
+  --black400: rgb(36, 35, 35);
 }
 
 //PADDINGS
 :root {
-  --padding-xs: 5px;
-  // --padding-lg: 30px;
+  --padding-2xs: 15px;
+  --padding-xs: 20px;
+  --padding-sm: 25px;
+  --padding-md: 40px;
+  --padding-lg: 50px;
+  --padding-xl: 60px;
+  --padding-2xl: 100px;
 }
 
 //MARGINS
 :root {
-  // --margin-md: 16px;
-  --margin-sm:20px;
-  --margin-lg: 40px;
-  --margin-xl:50px;
-  --margin-2xl:80px;
+  --margin-2xs: 10px;
+  --margin-xs: 20px;
+  --margin-sm: 30px;
+  --margin-md: 40px;
+  --margin-lg: 60px;
+  --margin-xl: 80px;
+  --margin-2xl: 100px;
 }
 
 //GAPS
 :root {
-  --gap-xs:10px;
-  --gap--sm:20px
+  --gap-2xs: 3px;
+  --gap-xs: 10px;
+  --gap-sm: 20px;
   --gap-md: 30px;
   --gap-lg: 40px;
+  --gap-xl: 50px;
+  --gap-2xl: 120px;
 }
 //FONT-SIZES
 :root {
-  --fontSize-md: 16px;
-  --fontSize-lg: 30px;
+  --fontSize-2xs: 13px;
+  --fontSize-xs: 15px;
+  --fontSize-sm: 20px;
+  --fontSize-md: 30px;
+  --fontSize-lg: 40px;
+  --fontSize-xl: 55px;
+  --fontSize-2xl: 62px;
 }
 
 //BORDER-RADIUS
-// :root {
-//   // --bdRadius-md: 16px;
-//   // --bdRadius-lg: 30px;
-// }
+:root {
+  --bdRadius-2xs: 5px;
+  --bdRadius-xs: 10px;
+  --bdRadius-sm: 15px;
+  --bdRadius-md: 25px;
+  --bdRadius-lg: 100px;
+  --bdRadius-xl: 120px;
+  --bdRadius-2xl: 150px;
+}
