@@ -12,11 +12,12 @@ import bouvier from "./assets/groomingDog.jpg";
 import yorkshire from "./assets/yorkshire.png";
 
 //SVG
+import PawVector from "@/components/Footer/assets/paw.svg";
 import ButtonArrow from "./assets/buttonArrow.svg";
-import PawVector from "../../../components/Footer/assets/paw.svg";
 import LeftArrow from "./assets/leftArrow.svg";
 import RightArrow from "./assets/rightArrow.svg";
-import Paw from "./../FirstSection/assets/paws1.svg";
+import Paw from "@/app/components/FirstSection/assets/paws1.svg";
+// import Paw from "./../FirstSection/assets/paws1.svg";
 
 // COMPONENTS
 import Button from "@/components/Button";
@@ -30,13 +31,13 @@ const SecondSection = () => {
           <div className={styles.productCategory}>
             <div className={styles.title}>
               <h2>Find Product category</h2>
-              <div className={styles.arrowsContainer}>
+              <div>
                 <LeftArrow alt="left arrow" />
                 <RightArrow alt="right arrow" className={styles.rightArrow} />
               </div>
             </div>
             <div className={styles.cardsContainer}>
-              <div className={styles.card} id={styles.dog}>
+              <div className={styles.card} id={styles.img1}>
                 <h3 className={styles.cardTitle}>Dogs</h3>
                 <Image
                   src={smilingDog}
@@ -44,10 +45,9 @@ const SecondSection = () => {
                   height={1333}
                   alt="dog"
                   className={styles.cardImage}
-                  id={styles.dogImg}
                 />
               </div>
-              <div className={styles.card} id={styles.cat}>
+              <div className={styles.card} id={styles.img2}>
                 <h3 className={styles.cardTitle}>Cats</h3>
                 <Image
                   src={cat}
@@ -55,10 +55,9 @@ const SecondSection = () => {
                   height={1121}
                   alt="cat"
                   className={styles.cardImage}
-                  id={styles.catImg}
                 />
               </div>
-              <div className={styles.card} id={styles.rabbit}>
+              <div className={styles.card} id={styles.img3}>
                 <h3 className={styles.cardTitle}>Rabbit</h3>
                 <Image
                   src={rabbit}
@@ -68,7 +67,7 @@ const SecondSection = () => {
                   className={styles.cardImage}
                 />
               </div>
-              <div className={styles.card} id={styles.parrot}>
+              <div className={styles.card} id={styles.img4}>
                 <h3 className={styles.cardTitle}>Parrot</h3>
                 <Image
                   src={parrot}
@@ -78,7 +77,7 @@ const SecondSection = () => {
                   className={styles.cardImage}
                 />
               </div>
-              <div className={styles.card} id={styles.hamster}>
+              <div className={styles.card} id={styles.img5}>
                 <h3 className={styles.cardTitle}>Hamster</h3>
                 <Image
                   src={hamster}
@@ -137,18 +136,18 @@ const SecondSection = () => {
             </div>
             <div className={styles.rightContainer}>
               <div className={styles.rightContainerTop}>
-                <div className={styles.bouvierContainer}>
+                <div>
                   <Image
                     src={bouvier}
                     width={410}
                     height={272}
                     alt="bouvier"
-                    className={styles.bouvier}
+                    id={styles.topImg}
                   />
                 </div>
               </div>
               <div className={styles.rightContainerBottom}>
-                <span className={styles.buttonContainer}>
+                <span>
                   <ButtonArrow alt="button arrow" />
                 </span>
                 <h5>Play video</h5>

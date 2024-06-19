@@ -12,11 +12,11 @@ const FourthSection = () => {
   return (
     <div className={styles.fourthSectionContainer}>
       <div className={styles.titleContent}>
-        <div className={styles.leftContent}>
+        <div>
           <h2>
             Reliable healthy food <br /> for your pet
           </h2>
-          <div className={styles.buttonsContainer}>
+          <div className={styles.btnsContainer}>
             <Button color="black" withBorder variant="round" width="S">
               dogs food
             </Button>

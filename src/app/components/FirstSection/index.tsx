@@ -20,7 +20,7 @@ import Button from "@/components/Button";
 const FirstSection = () => {
   return (
     <div className={styles.firstSectionContainer}>
-      <div className={styles.leftVerticalContainer}>
+      <div className={styles.verticalSideBar}>
         <ul>
           <li>Instagram</li>
           <li>Facebook</li>
@@ -28,11 +28,11 @@ const FirstSection = () => {
           <li>Let's talk</li>
         </ul>
       </div>
-      <div className={styles.leftCentralContainer}>
+      <div className={styles.centralContainer}>
         <div className={styles.top}>
           <h1>
             We give preference to your
-            <span className={styles.beagleContainer}>
+            <span>
               <Image src={beagle} width={137} height={137} alt="beagle" />
             </span>
             pets
@@ -50,7 +50,7 @@ const FirstSection = () => {
             width={280}
             height={234}
             alt="White and yellow dog"
-            className={styles.whiteAndYellowDog}
+            id={styles.bottomImg}
           />
           <div className={styles.textContainer}>
             <h6>Our happy pet owners</h6>
@@ -108,14 +108,14 @@ const FirstSection = () => {
               width={633}
               height={956}
               alt="Woman holding puppies"
-              className={styles.bannerImg}
+              id={styles.bannerImg}
             />
             <Image
               src={curvedLine}
               width={809}
               height={709}
               alt="curved Line"
-              className={styles.curvedLine}
+              id={styles.curvedLine}
             />
             <div className={styles.starContainer}>
               <Image
@@ -123,7 +123,6 @@ const FirstSection = () => {
                 width={500}
                 height={500}
                 alt="labrador"
-                className={styles.labrador}
               />
             </div>
           </div>

@@ -1,6 +1,8 @@
-import React from "react";
+"use client";
+import React, { useState } from "react";
 import styles from "./horizontalCard.module.scss";
 import Image from "next/image";
+
 // IMG
 import dogChewToys from "@/components/Footer/assets/dogChewToys.jpg";
 import cloth from "@/components/Card/assets/cloth.png";
@@ -11,12 +13,15 @@ import ball from "@/components/Card/assets/toyBall.png";
 import bed from "@/components/Footer/assets/bed.png";
 import belt from "@/components/Footer/assets/belt.jpg";
 import brush from "./assets/brush.jpg";
-import Button from "../Button";
 
 //SVG
 import Add from "./assets/plus.svg";
 import Remove from "./assets/minus.svg";
 import Delete from "./assets/x.svg";
+
+//COMPONENTS
+import Button from "../Button";
+
 const HorizontalCard = ({
   product,
   price,
@@ -40,24 +45,6 @@ const HorizontalCard = ({
               />
               <h4>Dog harness, adjustable for large dog body belt</h4>
             </div>
-            <div className={styles.price}>{price}</div>
-            <div className={styles.quantities}>
-              <Button width="XXS">
-                <Remove />
-              </Button>
-              <Button width="XXS" color="white">
-                {number}
-              </Button>
-              <Button width="XXS">
-                <Add />
-              </Button>
-            </div>
-            <div className={styles.total}>
-              ${total}
-              <Button width="XXS">
-                <Delete />
-              </Button>
-            </div>
           </div>
         );
         break;
@@ -74,24 +61,6 @@ const HorizontalCard = ({
                 id={styles.productImg2}
               />
               <h4>Dog winter sweater for golden retrievers</h4>
-            </div>
-            <div className={styles.price}>{price}</div>
-            <div className={styles.quantities}>
-              <Button width="XXS">
-                <Remove />
-              </Button>
-              <Button width="XXS" color="white">
-                {number}
-              </Button>
-              <Button width="XXS">
-                <Add />
-              </Button>
-            </div>
-            <div className={styles.total}>
-              ${total}
-              <Button width="XXS">
-                <Delete />
-              </Button>
             </div>
           </div>
         );
@@ -110,24 +79,6 @@ const HorizontalCard = ({
               />
               <h4>Pet bed for dogs</h4>
             </div>
-            <div className={styles.price}>{price}</div>
-            <div className={styles.quantities}>
-              <Button width="XXS">
-                <Remove />
-              </Button>
-              <Button width="XXS" color="white">
-                {number}
-              </Button>
-              <Button width="XXS">
-                <Add />
-              </Button>
-            </div>
-            <div className={styles.total}>
-              ${total}
-              <Button width="XXS">
-                <Delete />
-              </Button>
-            </div>
           </div>
         );
         break;
@@ -145,24 +96,6 @@ const HorizontalCard = ({
               />
               <h4>dog chew toys</h4>
             </div>
-            <div className={styles.price}>{price}</div>
-            <div className={styles.quantities}>
-              <Button width="XXS">
-                <Remove />
-              </Button>
-              <Button width="XXS" color="white">
-                {number}
-              </Button>
-              <Button width="XXS">
-                <Add />
-              </Button>
-            </div>
-            <div className={styles.total}>
-              ${total}
-              <Button width="XXS">
-                <Delete />
-              </Button>
-            </div>
           </div>
         );
         break;
@@ -179,24 +112,6 @@ const HorizontalCard = ({
                 id={styles.productImg5}
               />
               <h4>Goofy tails wood dog free dog chewtoys</h4>
-            </div>
-            <div className={styles.price}>{price}</div>
-            <div className={styles.quantities}>
-              <Button width="XXS">
-                <Remove />
-              </Button>
-              <Button width="XXS" color="white">
-                {number}
-              </Button>
-              <Button width="XXS">
-                <Add />
-              </Button>
-            </div>
-            <div className={styles.total}>
-              ${total}
-              <Button width="XXS">
-                <Delete />
-              </Button>
             </div>
           </div>
         );
@@ -230,24 +145,6 @@ const HorizontalCard = ({
               />
               <h4>confortable pillow for dogs</h4>
             </div>
-            <div className={styles.price}>{price}</div>
-            <div className={styles.quantities}>
-              <Button width="XXS">
-                <Remove />
-              </Button>
-              <Button width="XXS" color="white">
-                {number}
-              </Button>
-              <Button width="XXS">
-                <Add />
-              </Button>
-            </div>
-            <div className={styles.total}>
-              ${total}
-              <Button width="XXS">
-                <Delete />
-              </Button>
-            </div>
           </div>
         );
         break;
@@ -264,24 +161,6 @@ const HorizontalCard = ({
                 id={styles.productImg8}
               />
               <h4>Ball for cats and dogs</h4>
-            </div>
-            <div className={styles.price}>{price}</div>
-            <div className={styles.quantities}>
-              <Button width="XXS">
-                <Remove />
-              </Button>
-              <Button width="XXS" color="white">
-                {number}
-              </Button>
-              <Button width="XXS">
-                <Add />
-              </Button>
-            </div>
-            <div className={styles.total}>
-              ${total}
-              <Button width="XXS">
-                <Delete />
-              </Button>
             </div>
           </div>
         );
@@ -300,24 +179,6 @@ const HorizontalCard = ({
               />
               <h4>Brush for dogs and cats</h4>
             </div>
-            <div className={styles.price}>{price}</div>
-            <div className={styles.quantities}>
-              <Button width="XXS">
-                <Remove />
-              </Button>
-              <Button width="XXS" color="white">
-                {number}
-              </Button>
-              <Button width="XXS">
-                <Add />
-              </Button>
-            </div>
-            <div className={styles.total}>
-              ${total}
-              <Button width="XXS">
-                <Delete />
-              </Button>
-            </div>
           </div>
         );
         break;
@@ -326,11 +187,46 @@ const HorizontalCard = ({
     }
   };
 
-  const total = 0;
-  const number = 0;
+  let [total, setTotal] = useState(0);
+  let [number, setNumber] = useState(0);
   return (
     <div className={styles.horizontalCardContainer}>
       {functionSwitch(product)}
+      <div className={styles.details}>
+        <div className={styles.price}>{price}</div>
+        <div className={styles.quantities}>
+          <Button width="XXS">
+            <Remove
+              onClick={() => {
+                number > 0
+                  ? (setNumber(number - 1), setTotal(total - 40))
+                  : (setNumber(0), setTotal(0));
+              }}
+            />
+          </Button>
+          <Button width="XXS" color="white">
+            {number}
+          </Button>
+          <Button width="XXS">
+            <Add
+              onClick={() => {
+                setNumber(number + 1);
+                setTotal(total + 40);
+              }}
+            />
+          </Button>
+        </div>
+        <div className={styles.total}>
+          ${total}
+          <Button width="XXS">
+            <Delete
+              onClick={() => {
+                setTotal(0), setNumber(0);
+              }}
+            />
+          </Button>
+        </div>
+      </div>
     </div>
   );
 };

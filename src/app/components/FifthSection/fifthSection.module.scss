@@ -11,15 +11,8 @@
       display: flex;
       flex-direction: column;
     }
-    .first,
-    .second,
-    .third,
-    .fourth,
-    .fifth,
-    .sixth,
-    .seventh,
-    .eighth,
-    .ninth {
+
+    .ovfHidden {
       overflow: hidden;
     }
 
@@ -131,7 +124,7 @@
     margin-top: 166px;
     border-radius: var(--bdRadius-md);
     display: flex;
-    align-items: end;
+    align-items: flex-end;
 
     .textContainer {
       width: 50%;

@@ -16,7 +16,7 @@ import seventh from "./assets/seventh.jpg";
 import ninth from "./assets/ninth.jpg";
 import eighth from "./assets/eighth.jpg";
 import kittendAndPuppy from "./assets/kittenWithPuppy.png";
-import curvedLine from "./../../components/FirstSection/assets/curvedLine.png";
+import curvedLine from "@/app/components/FirstSection/assets/curvedLine.png";
 import man from "./assets/faceMan.jpg";
 
 //SVG
@@ -24,13 +24,14 @@ import Paw from "./assets/paws1.svg";
 import ChevronLeft from "./assets/chevronLeft.svg";
 import ChevronRight from "./assets/chevronRight.svg";
 import Add from "./assets/add.svg";
+import classNames from "classnames";
 
 const FifthSection = () => {
   return (
     <div className={styles.fifthSectionContainer}>
       <div className={styles.fifthTop}>
         <div className={styles.fifthTopImgs}>
-          <div className={styles.first}>
+          <div className={classNames(styles.ovfHidden, styles.first)}>
             <Image
               src={first}
               width={300}
@@ -39,7 +40,7 @@ const FifthSection = () => {
               id={styles.imgFirst}
             />
           </div>
-          <div className={styles.second}>
+          <div className={classNames(styles.ovfHidden, styles.second)}>
             <Image
               src={second}
               width={300}
@@ -50,7 +51,7 @@ const FifthSection = () => {
           </div>
         </div>
         <div className={styles.fifthTopImgs}>
-          <div className={styles.third}>
+          <div className={classNames(styles.ovfHidden, styles.third)}>
             <Image
               src={third}
               width={300}
@@ -59,7 +60,7 @@ const FifthSection = () => {
               id={styles.imgThird}
             />
           </div>
-          <div className={styles.fourth}>
+          <div className={classNames(styles.ovfHidden, styles.fourth)}>
             <Image
               src={fourth}
               width={300}
@@ -70,7 +71,7 @@ const FifthSection = () => {
           </div>
         </div>
         <div className={styles.fifthTopImgs}>
-          <div className={styles.fifth}>
+          <div className={classNames(styles.ovfHidden, styles.fifth)}>
             <Image
               src={fifth}
               width={410}
@@ -84,7 +85,7 @@ const FifthSection = () => {
           </div>
         </div>
         <div className={styles.fifthTopImgs}>
-          <div className={styles.sixth}>
+          <div className={classNames(styles.ovfHidden, styles.sixth)}>
             <Image
               src={sixth}
               width={300}
@@ -93,7 +94,7 @@ const FifthSection = () => {
               id={styles.imgSixth}
             />
           </div>
-          <div className={styles.seventh}>
+          <div className={classNames(styles.ovfHidden, styles.seventh)}>
             <Image
               src={seventh}
               width={300}
@@ -104,7 +105,7 @@ const FifthSection = () => {
           </div>
         </div>
         <div className={styles.fifthTopImgs}>
-          <div className={styles.first}>
+          <div className={classNames(styles.ovfHidden, styles.first)}>
             <Image
               src={eighth}
               width={300}
@@ -113,7 +114,7 @@ const FifthSection = () => {
               id={styles.imgFirst}
             />
           </div>
-          <div className={styles.fourth}>
+          <div className={classNames(styles.ovfHidden, styles.fourth)}>
             <Image
               src={ninth}
               width={300}
@@ -143,7 +144,7 @@ const FifthSection = () => {
                 alt="man"
                 id={styles.author}
               />
-              <div className={styles.pseudoContainer}>
+              <div>
                 <h5>Kenneth Fong</h5>
                 <h6> Postgraduate Student</h6>
               </div>

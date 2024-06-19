@@ -14,6 +14,7 @@ import Chevron from "./assets/chevronRight.svg";
 
 //IMG
 import paypal from "./assets/payPal.png";
+
 enum CountryEnum {
   india = "india",
   france = "france",

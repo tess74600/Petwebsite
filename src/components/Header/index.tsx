@@ -55,15 +55,15 @@ const Header = () => {
               </li>
               <li>
                 <a href="">
-                  <Search alt="search" />
+                  <Search alt="search" className={styles.hiddenMenu} />
                 </a>
               </li>
               <li>
                 <a href="">
-                  <Heart alt="heart" />
+                  <Heart alt="heart" className={styles.hiddenMenu} />
                 </a>
               </li>
-              <Link href="/checkout">
+              <Link href="/checkout" className={styles.hiddenMenu}>
                 <li>
                   <Shopping alt="shopping" />
                 </li>
@@ -72,8 +72,9 @@ const Header = () => {
                 <a
                   href="
               "
+                  id={styles.menu}
                 >
-                  <Lines alt="lines" />
+                  <Lines alt="menu" />
                 </a>
               </li>
             </ul>

@@ -17,7 +17,7 @@ import belt from "@/components/Footer/assets/belt.jpg";
 import Exchange from "./assets/exchange.svg";
 import Shopping from "./assets/shopping-cart.svg";
 import Visible from "./assets/visible1.svg";
-import Star from "../../app/components/FirstSection/assets/Star18.svg";
+import Star from "@/app/components/FirstSection/assets/Star18.svg";
 
 const Card = ({ title, source }: { title: string; source: string }) => {
   const functionSwitch = (parametre: string) => {
@@ -45,7 +45,6 @@ const Card = ({ title, source }: { title: string; source: string }) => {
               width={225}
               height={225}
               alt="dog's cloth"
-              className={styles.cardImg}
               id={styles.cardImg2}
               onClick={() => setIsClicked(!isClicked)}
             />
@@ -60,7 +59,6 @@ const Card = ({ title, source }: { title: string; source: string }) => {
               width={225}
               height={225}
               alt="bed"
-              className={styles.cardImg}
               id={styles.cardImg3}
               onClick={() => setIsClicked(!isClicked)}
             />
@@ -75,7 +73,6 @@ const Card = ({ title, source }: { title: string; source: string }) => {
               width={2500}
               height={2500}
               alt="bone chew toy"
-              className={styles.cardImg}
               id={styles.cardImg4}
               onClick={() => setIsClicked(!isClicked)}
             />
@@ -90,7 +87,6 @@ const Card = ({ title, source }: { title: string; source: string }) => {
               width={225}
               height={225}
               alt="dog's bone"
-              className={styles.cardImg}
               id={styles.cardImg5}
               onClick={() => setIsClicked(!isClicked)}
             />
@@ -105,7 +101,6 @@ const Card = ({ title, source }: { title: string; source: string }) => {
               width={225}
               height={225}
               alt="rope"
-              className={styles.cardImg}
               id={styles.cardImg6}
               onClick={() => setIsClicked(!isClicked)}
             />
@@ -120,7 +115,6 @@ const Card = ({ title, source }: { title: string; source: string }) => {
               width={225}
               height={225}
               alt="dog pillow"
-              className={styles.cardImg}
               id={styles.cardImg7}
               onClick={() => setIsClicked(!isClicked)}
             />
@@ -135,7 +129,6 @@ const Card = ({ title, source }: { title: string; source: string }) => {
               width={225}
               height={225}
               alt="ball"
-              className={styles.cardImg}
               id={styles.cardImg8}
               onClick={() => setIsClicked(!isClicked)}
             />
