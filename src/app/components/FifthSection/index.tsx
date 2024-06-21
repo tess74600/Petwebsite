@@ -111,7 +111,7 @@ const FifthSection = () => {
               width={300}
               height={340}
               alt="img"
-              id={styles.imgFirst}
+              id={styles.imgEighth}
             />
           </div>
           <div className={classNames(styles.ovfHidden, styles.fourth)}>

@@ -1,54 +1,76 @@
 .cartPageContainer {
   font-family: "Lufga";
-  padding-top: var(--padding-2xl);
   display: flex;
-  padding: 90px 50px;
-  gap: 50px;
+  padding: var(--padding-2xl) var(--padding-xl);
+  gap: var(--gap-xl);
+
+  @media screen and (max-width: 768px) {
+    padding-left: var(--padding-2xs);
+    flex-direction: column;
+  }
   .products {
     width: 60%;
-    margin-left: 60px;
-
+    margin-left: var(--margin-lg);
+    @media screen and (max-width: 768px) {
+      width: 90%;
+      margin: 0 auto;
+    }
     .productTitles {
       display: flex;
-      // gap: 50px;
-      margin-bottom: 20px;
+      margin-bottom: var(--margin-xs);
+
       h4 {
-        font-size: 20px;
-        margin-right: 60px;
+        font-size: var(--fontSize-sm);
+        margin-right: var(--margin-lg);
+
+        @media screen and (max-width: 768px) {
+          margin-right: var(--padding-2xs);
+        }
 
         &:first-of-type {
           margin-right: 360px;
+          @media screen and (max-width: 768px) {
+            margin-right: 180px;
+          }
         }
       }
     }
     .productsContainer {
       display: flex;
       flex-direction: column;
-      gap: 20px;
+      gap: var(--gap-sm);
+      @media screen and (max-width: 768px) {
+        gap: var(--gap-lg);
+      }
     }
   }
   .cartTotal {
     width: 35%;
+    @media screen and (max-width: 768px) {
+      width: 90%;
+      margin: 0 auto;
+    }
 
     h3 {
       font-size: var(--fontSize-sm);
-      padding-bottom: 15px;
+      padding-bottom: var(--padding-2xs);
+
+      @media screen and (max-width: 768px) {
+        text-align: center;
+      }
     }
 
     .cartTotalContainer {
       border: 1px solid var(--black400);
       border-radius: var(--bdRadius-sm);
       padding: var(--padding-md);
-      h5 {
-        font-size: 16px;
-      }
-
+      h5,
       p {
-        font-size: 14px;
+        font-size: var(--fontSize-xs);
       }
 
       h6 {
-        font-size: 13px;
+        font-size: var(--fontSize-2xs);
       }
       .cashback,
       .freeShipping,
@@ -59,14 +81,14 @@
 
       .cashback {
         text-align: center;
-        padding: 15px 0;
+        padding: var(--padding-2xs) 0;
         margin-bottom: var(--padding-xs);
       }
       .freeShipping,
       .enjoyProduct,
       .save {
         display: flex;
-        gap: 10px;
+        gap: var(--gap-xs);
       }
       .freeShipping {
         margin-bottom: var(--padding-xs);
@@ -74,7 +96,7 @@
 
       .freeShipping,
       .enjoyProduct {
-        padding: 15px 0 15px var(--padding-xs);
+        padding: var(--padding-2xs) 0 var(--padding-2xs) var(--padding-xs);
       }
 
       .enjoyProduct {
@@ -86,11 +108,11 @@
 
       .save {
         border-bottom: 1px var(--grey400) solid;
-        padding-bottom: 13px;
+        padding-bottom: var(--padding-2xs);
       }
 
       .totalAmount {
-        padding-top: 24px;
+        padding-top: var(--padding-sm);
         display: flex;
         justify-content: space-between;
         padding-bottom: 29px;

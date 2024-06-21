@@ -1,7 +1,9 @@
 .secondSectionContainer {
   font-family: "Lufga";
   position: relative;
-
+  .arrow {
+    cursor: pointer;
+  }
   .whiteContainer {
     background: var(--white400);
   }
@@ -9,7 +11,9 @@
     @media screen and (max-width: 1440px) {
       padding: var(--padding-2xl) 0;
     }
-
+    @media screen and (max-width: 768px) {
+      padding: var(--padding-lg) 0;
+    }
     .title {
       margin-bottom: var(--margin-md);
       display: flex;
@@ -17,6 +21,9 @@
       text-transform: capitalize;
       font-size: var(--fontSize-lg);
       justify-content: space-between;
+      @media screen and (max-width: 768px) {
+        font-size: var(--fontSize-sm);
+      }
 
       .rightArrow {
         margin-left: var(--margin-sm);
@@ -26,6 +33,9 @@
     .cardsContainer {
       display: flex;
       gap: var(--gap-md);
+      @media screen and (max-width: 768px) {
+        gap: var(--gap-sm);
+      }
       #img1 {
         background: #ffddd6;
       }
@@ -53,6 +63,10 @@
         align-items: center;
         padding-top: var(--padding-2xs);
 
+        @media screen and (max-width: 768px) {
+          width: 220px;
+          height: 170px;
+        }
         .cardTitle {
           font-family: "Lufga";
           font-size: var(--fontSize-sm);
@@ -61,6 +75,7 @@
         .cardImage {
           width: 234px;
           height: auto;
+          cursor: pointer;
         }
       }
     }
@@ -72,15 +87,26 @@
     @media screen and (max-width: 1440px) {
       left: -70px;
     }
+    @media screen and (max-width: 768px) {
+      left: -40px;
+      top: 100px;
+    }
   }
   .petCareServices {
     background: var(--pink300);
     padding: var(--padding-2xl) 0;
 
+    @media screen and (max-width: 1440px) {
+      padding: var(--padding-xl) 0;
+    }
+
     .petCareServicesContainer {
       margin: 0 auto;
       display: flex;
       gap: var(--gap-md);
+      @media screen and (max-width: 768px) {
+        flex-direction: column;
+      }
       .leftContainer {
         text-transform: capitalize;
         h2 {
@@ -88,6 +114,14 @@
           font-weight: 600;
           line-height: 65px;
           margin-bottom: var(--margin-xs);
+          @media screen and (max-width: 1440px) {
+            font-size: var(--fontSize-md);
+            line-height: 50px;
+          }
+          @media screen and (max-width: 768px) {
+            font-size: var(--fontSize-md);
+            text-align: center;
+          }
         }
         .leftContainerContent {
           display: flex;
@@ -117,6 +151,15 @@
         padding: var(--padding-md);
         display: flex;
         flex-direction: column;
+        @media screen and (max-width: 1224px) {
+          width: 450px;
+        }
+        @media screen and (max-width: 768px) {
+          width: 500px;
+          justify-content: center;
+          align-items: center;
+          margin: 0 auto;
+        }
 
         h3 {
           padding-left: var(--padding-lg);
@@ -136,6 +179,9 @@
           font-size: var(--fontSize-sm);
           margin-bottom: var(--margin-xl);
           line-height: 30px;
+          @media screen and (max-width: 1224px) {
+            margin-bottom: var(--margin-sm);
+          }
         }
       }
 
@@ -147,6 +193,9 @@
           #topImg {
             border-radius: 0 var(--bdRadius-lg) 0 0;
           }
+        }
+        @media screen and (max-width: 768px) {
+          display: none;
         }
 
         .rightContainerBottom {
@@ -173,6 +222,10 @@
           }
           h5 {
             margin: 0 var(--margin-xs) var(--margin-md) 0;
+          }
+
+          .buttonVideo {
+            cursor: pointer;
           }
         }
       }

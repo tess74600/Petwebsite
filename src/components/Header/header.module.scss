@@ -16,6 +16,9 @@
         font-family: "Jost", sans-serif;
         text-transform: capitalize;
         font-size: var(--fontSize-md);
+        @media screen and (max-width: 768px) {
+          font-size: var(--fontSize-sm);
+        }
       }
     }
 
@@ -30,11 +33,21 @@
       @media screen and (max-width: 1440px) {
         gap: 250px;
       }
+      @media screen and (max-width: 1224px) {
+        gap: 200px;
+      }
+      @media screen and (max-width: 768px) {
+        margin-left: var(--margin-sm);
+        gap: 90px;
+      }
 
       .navLeft {
         gap: var(--gap-lg);
         display: flex;
         align-items: center;
+        @media screen and (max-width: 768px) {
+          gap: var(--gap-md);
+        }
         li {
           display: flex;
           gap: var(--gap-2xs);
@@ -44,11 +57,64 @@
       .navRight {
         display: flex;
         gap: var(--gap-md);
+
         .login {
           text-decoration: underline;
         }
+        // @media screen and (max-width: 1200px) {
+        //   display: none;
+        // }
+        // @media screen and (max-width: 1200px) {
+        //   position: fixed;
+        //   right: -100%;
+        //   top: 5%;
+        //   width: 100%;
+        //   text-align: center;
+        //   transition: 0.25s;
+        //   flex-direction: column;
+        // }
+      }
+      // &.navRight.active {
+      //   color: red;
+      //   right: 10%;
+      // }
+
+      // .navRight.active {
+      //   display: flex;
+      //   color: red;
+      //   position: fixed;
+      //   right: -20%;
+      //   top: 5%;
+      //   width: 100%;
+      //   text-align: center;
+      //   transition: 0.25s;
+      //   flex-direction: column;
+      // }
+
+      #menu {
+        display: none;
+        cursor: pointer;
+      }
+
+      @media screen and (max-width: 768px) {
         #menu {
+          display: block;
+        }
+        .navRight {
+          position: fixed;
+          right: 10%;
+          top: 5%;
+          width: 100%;
+          text-align: center;
+          transition: 0.25s;
+          flex-direction: column;
+          opacity: 0;
           display: none;
+        }
+        .active {
+          opacity: 1;
+          color: rebeccapurple;
+          right: 10%;
         }
       }
     }

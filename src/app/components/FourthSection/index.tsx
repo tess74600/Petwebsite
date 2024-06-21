@@ -13,9 +13,13 @@ const FourthSection = () => {
     <div className={styles.fourthSectionContainer}>
       <div className={styles.titleContent}>
         <div>
-          <h2>
-            Reliable healthy food <br /> for your pet
-          </h2>
+          <div className={styles.title}>
+            <h2>
+              Reliable healthy food <br /> for your pet
+            </h2>
+            <AllProducts className={styles.logo} />
+          </div>
+
           <div className={styles.btnsContainer}>
             <Button color="black" withBorder variant="round" width="S">
               dogs food
@@ -34,7 +38,7 @@ const FourthSection = () => {
             </Button>
           </div>
         </div>
-        <AllProducts />
+        {/* <AllProducts className={styles.logo} /> */}
       </div>
       <div className={styles.cardsContainer}>
         <Card title="Dog Body Belt" source="belt" />

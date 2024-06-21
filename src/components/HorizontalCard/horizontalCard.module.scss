@@ -1,27 +1,39 @@
 .horizontalCardContainer {
   font-family: "Lufga";
-  gap: 20px;
+  gap: var(--gap-sm);
   display: flex;
   align-items: center;
   .productContainer {
     display: flex;
     align-items: center;
     width: 45%;
-    margin-right: 20px;
+    margin-right: var(--margin-xs);
+    @media screen and (max-width: 768px) {
+      margin-right: var(--margin-2xs);
+    }
   }
   .productIdentity {
     display: flex;
     align-items: center;
+
+    @media screen and (max-width: 768px) {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: var(--gap-xs);
+    }
     .productImg {
-      border: 1px black solid;
-      border-radius: 15px;
-      margin-right: 20px;
+      border: 1px var(--black400) solid;
+      border-radius: var(--bdRadius-sm);
+      margin-right: var(--margin-xs);
       width: 80px;
       height: auto;
     }
     h4 {
-      font-size: 20px;
+      font-size: var(--fontSize-sm);
       text-transform: capitalize;
+      @media screen and (max-width: 768px) {
+        font-size: var(--fontSize-xs);
+      }
     }
   }
 
@@ -36,12 +48,12 @@
   .total {
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: var(--gap-xs);
   }
 
   .price,
   .total {
-    font-size: 16px;
+    font-size: var(--fontSize-xs);
   }
 
   .price {

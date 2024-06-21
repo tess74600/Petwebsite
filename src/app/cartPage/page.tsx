@@ -24,7 +24,6 @@ const CartPage = () => {
             <h4>Subtotal</h4>
           </div>
           <div className={styles.productsContainer}>
-            {/* <HorizontalCard product="Product" price="Price" /> */}
             <HorizontalCard product="brush" price="$40.00" />
             <HorizontalCard product="bone" price="$40.00" />
             <HorizontalCard product="bed" price="$40.00" />

@@ -29,7 +29,7 @@ const Footer = () => {
       <GlobalContainer>
         <div className={styles.footerContainer}>
           <div className={styles.footerTop}>
-            <div>
+            <div className={styles.footerContact}>
               <div>
                 <div className={styles.logoContainer}>
                   <Logo alt="logo" />
@@ -42,8 +42,12 @@ const Footer = () => {
               <div className={styles.footerNewsletter}>
                 <h4>Subscribe to our newsletter</h4>
                 <div className={styles.input}>
-                  <p>Your Email Address </p>
-
+                  <input
+                    type="email"
+                    name=""
+                    id=""
+                    placeholder="Your Email Address"
+                  />
                   <a href="">
                     <Arrow alt="arrow right" />
                   </a>
@@ -64,16 +68,29 @@ const Footer = () => {
                     />
                   </div>
                   <div className={styles.textContainer}>
-                    <h4>Dog Harnless body belt</h4>
+                    <a href="">
+                      <h4>Dog Harnless body belt</h4>
+                    </a>
                     <h6>July 23, 2024</h6>
                   </div>
                 </div>
                 <div className={styles.postContainer}>
                   <div className={styles.imgContainer}>
-                    <Image src={bed} width={60} height={60} alt="" />
+                    <Image
+                      src={bed}
+                      width={800}
+                      height={800}
+                      alt=""
+                      className={styles.img60}
+                    />
                   </div>
                   <div className={styles.textContainer}>
-                    <h4>Pet beds for small</h4>
+                    <a
+                      href="
+                    "
+                    >
+                      <h4>Pet beds for small</h4>
+                    </a>
                     <h6>July 23, 2024</h6>
                   </div>
                 </div>
@@ -88,7 +105,12 @@ const Footer = () => {
                     />
                   </div>
                   <div className={styles.textContainer}>
-                    <h4>Goofy tails wood dog</h4>
+                    <a
+                      href="
+                    "
+                    >
+                      <h4>Goofy tails wood dog</h4>
+                    </a>
                     <h6>July 23, 2024</h6>
                   </div>
                 </div>

@@ -1,6 +1,8 @@
-import React from "react";
+"use client";
+import React, { useRef, useState } from "react";
 import styles from "./header.module.scss";
 import Link from "next/link";
+import classNames from "classnames";
 
 // SVG
 import Logo from "./assets/Logo.svg";
@@ -9,6 +11,8 @@ import Heart from "./assets/heart1.svg";
 import Shopping from "./assets/shopping-cart 1.svg";
 import Lines from "./assets/lines.svg";
 const Header = () => {
+  const [displayMenu, setDisplayMenu] = useState(false);
+
   return (
     <>
       <header className={styles.headerContainer}>
@@ -47,7 +51,12 @@ const Header = () => {
                 <span>✦</span>
               </li>
             </ul>
-            <ul className={styles.navRight}>
+            <ul
+              className={classNames(
+                styles.navRight,
+                `${displayMenu && ".active"}`
+              )}
+            >
               <li>
                 <a href="" className={styles.login}>
                   Login/Register
@@ -68,16 +77,15 @@ const Header = () => {
                   <Shopping alt="shopping" />
                 </li>
               </Link>
-              <li>
-                <a
-                  href="
-              "
-                  id={styles.menu}
-                >
-                  <Lines alt="menu" />
-                </a>
-              </li>
             </ul>
+
+            <Lines
+              alt="menu"
+              id={styles.menu}
+              onClick={() => {
+                setDisplayMenu(true);
+              }}
+            />
           </nav>
         </div>
       </header>

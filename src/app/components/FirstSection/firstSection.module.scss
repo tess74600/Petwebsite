@@ -27,6 +27,10 @@
           @media screen and (max-width: 1440px) {
             margin-top: 300px;
           }
+          @media screen and (max-width: 768px) {
+            margin-top: 200px;
+            padding: var(--padding-xs) 3px;
+          }
         }
       }
     }
@@ -37,12 +41,18 @@
     @media screen and (max-width: 1440px) {
       margin-left: var(--margin-sm);
     }
+    @media screen and (max-width: 768px) {
+      margin-left: var(--margin-xs);
+    }
     .top {
       margin-top: 146px;
       display: flex;
       flex-direction: column;
       @media screen and (max-width: 1440px) {
         margin-left: var(--margin-sm);
+      }
+      @media screen and (max-width: 768px) {
+        margin-top: var(--margin-md);
       }
       h1 {
         width: 60%;
@@ -51,7 +61,10 @@
         text-transform: capitalize;
         position: relative;
         display: inline-block;
-
+        @media screen and (max-width: 768px) {
+          font-size: var(--fontSize-lg);
+          width: 40%;
+        }
         span {
           clip-path: polygon(
             48.387% 2.989%,
@@ -303,6 +316,10 @@
             width: 89px;
             height: 89px;
           }
+          @media screen and (max-width: 768px) {
+            width: 60px;
+            height: 60px;
+          }
           display: inline-block;
           position: relative;
           bottom: -20px;
@@ -318,6 +335,10 @@
             @media screen and (max-width: 1440px) {
               width: 85px;
               height: 85px;
+            }
+            @media screen and (max-width: 768px) {
+              width: 64px;
+              height: 64px;
             }
             clip-path: polygon(
               48.387% 2.989%,
@@ -582,6 +603,11 @@
         border-radius: var(--bdRadius-sm);
         width: 160px;
         height: auto;
+
+        @media screen and (max-width: 768px) {
+          width: 120px;
+          height: auto;
+        }
       }
       @media screen and (max-width: 1440px) {
         margin: var(--margin-2xl) 0 var(--margin-2xl) var(--margin-sm);
@@ -592,6 +618,9 @@
         flex-direction: column;
         gap: var(--gap-xs);
         margin-left: var(--margin-xs);
+        @media screen and (max-width: 768px) {
+          margin-left: var(--margin-2xs);
+        }
         h6 {
           font-size: var(--fontSize-sm);
           text-transform: capitalize;
@@ -661,6 +690,10 @@
       @media screen and (max-width: 1440px) {
         right: -50px;
       }
+      @media screen and (max-width: 768px) {
+        right: -150px;
+        top: 30px;
+      }
     }
     #curvedLine {
       z-index: -2;
@@ -669,6 +702,9 @@
       top: 100px;
       @media screen and (max-width: 1440px) {
         right: -200px;
+      }
+      @media screen and (max-width: 768px) {
+        display: none;
       }
     }
     .starContainer {
@@ -679,6 +715,9 @@
       @media screen and (max-width: 1440px) {
         top: 20%;
         right: 20%;
+      }
+      @media screen and (max-width: 768px) {
+        display: none;
       }
     }
   }

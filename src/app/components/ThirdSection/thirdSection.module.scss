@@ -1,14 +1,17 @@
 .thirdSectionContainer {
   background: var(--white400);
+  padding: 80px;
+  @media screen and (max-width: 1224px) {
+    padding: 40px;
+  }
   div {
     display: flex;
-
     gap: var(--gap-2xl);
     background: white;
     justify-content: space-around;
+
     @media screen and (max-width: 1440px) {
       gap: var(--gap-xl);
-      padding: 40px;
     }
   }
 }

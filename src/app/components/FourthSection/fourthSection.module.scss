@@ -2,17 +2,31 @@
   padding: var(--padding-2xl) 0;
   font-family: "Lufga";
 
-  @media screen and (max-width: 1440px) {
+  @media screen and (max-width: 1224px) {
     padding: var(--padding-xl) 0;
   }
   .titleContent {
-    display: flex;
-    justify-content: space-between;
     margin-bottom: var(--margin-lg);
 
-    h2 {
-      font-size: var(--fontSize-xl);
-      text-transform: capitalize;
+    .title {
+      display: flex;
+      justify-content: space-between;
+      h2 {
+        font-size: var(--fontSize-xl);
+        text-transform: capitalize;
+        @media screen and (max-width: 768px) {
+          font-size: var(--fontSize-lg);
+        }
+      }
+      .logo {
+        width: 200px;
+        height: 200px;
+
+        @media screen and (max-width: 1224px) {
+          width: 100px;
+          height: 100px;
+        }
+      }
     }
 
     .btnsContainer {
@@ -26,5 +40,11 @@
     display: flex;
     gap: var(--gap-xl);
     flex-wrap: wrap;
+    @media screen and (max-width: 1440px) {
+      gap: var(--gap-sm);
+    }
+    @media screen and (max-width: 1224px) {
+      gap: var(--gap-lg);
+    }
   }
 }

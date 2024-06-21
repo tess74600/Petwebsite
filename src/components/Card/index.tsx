@@ -18,6 +18,7 @@ import Exchange from "./assets/exchange.svg";
 import Shopping from "./assets/shopping-cart.svg";
 import Visible from "./assets/visible1.svg";
 import Star from "@/app/components/FirstSection/assets/Star18.svg";
+import Heart from "./assets/watchlist.svg";
 
 const Card = ({ title, source }: { title: string; source: string }) => {
   const functionSwitch = (parametre: string) => {
@@ -145,13 +146,7 @@ const Card = ({ title, source }: { title: string; source: string }) => {
   return (
     <div className={styles.cardContainer}>
       {functionSwitch(source)}
-      <Image
-        src={watchList}
-        width={24}
-        height={24}
-        alt="watchList"
-        className={styles.watchList}
-      />
+      <Heart className={styles.watchList} />
       {isClicked && (
         <div className={styles.hoverContainer}>
           <div className={styles.iconsContainer}>
@@ -171,7 +166,9 @@ const Card = ({ title, source }: { title: string; source: string }) => {
       )}
       <div className={styles.bottomCard}>
         <h5>Pet Item</h5>
-        <h6>{title}</h6>
+        <a>
+          <h6>{title}</h6>
+        </a>
         <div className={styles.bottomContainer}>
           <div className={styles.priceContainer}>
             <h3 className={styles.price}>$80</h3>

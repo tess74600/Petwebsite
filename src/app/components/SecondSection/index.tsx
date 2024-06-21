@@ -1,6 +1,7 @@
 import React from "react";
 import styles from "./secondSection.module.scss";
 import Image from "next/image";
+import classNames from "classnames";
 
 // IMG
 import cat from "./assets/furryCat.png";
@@ -32,8 +33,11 @@ const SecondSection = () => {
             <div className={styles.title}>
               <h2>Find Product category</h2>
               <div>
-                <LeftArrow alt="left arrow" />
-                <RightArrow alt="right arrow" className={styles.rightArrow} />
+                <LeftArrow alt="left arrow" className={styles.arrow} />
+                <RightArrow
+                  alt="right arrow"
+                  className={classNames(styles.arrow, styles.rightArrow)}
+                />
               </div>
             </div>
             <div className={styles.cardsContainer}>
@@ -95,10 +99,7 @@ const SecondSection = () => {
         <div className={styles.petCareServices}>
           <div className={styles.petCareServicesContainer}>
             <div className={styles.leftContainer}>
-              <h2>
-                Our pet <br />
-                care services
-              </h2>
+              <h2>Our pet care services</h2>
               <div className={styles.leftContainerContent}>
                 <h5> Pet grooming</h5>
                 <RightArrow alt="right arrow" className={styles.arrow} />
@@ -148,7 +149,10 @@ const SecondSection = () => {
               </div>
               <div className={styles.rightContainerBottom}>
                 <span>
-                  <ButtonArrow alt="button arrow" />
+                  <ButtonArrow
+                    alt="button arrow"
+                    className={styles.buttonVideo}
+                  />
                 </span>
                 <h5>Play video</h5>
                 <Image
