@@ -1,5 +1,4 @@
 .cartPageContainer {
-  font-family: "Lufga";
   display: flex;
   padding: var(--padding-2xl) var(--padding-xl);
   gap: var(--gap-xl);
@@ -22,15 +21,16 @@
       h4 {
         font-size: var(--fontSize-sm);
         margin-right: var(--margin-lg);
+        font-family: "DM-SANS-700", sans-serif;
 
         @media screen and (max-width: 768px) {
-          margin-right: var(--padding-2xs);
+          margin-right: var(--padding-md);
         }
 
         &:first-of-type {
           margin-right: 360px;
           @media screen and (max-width: 768px) {
-            margin-right: 180px;
+            margin-right: 250px;
           }
         }
       }
@@ -53,6 +53,7 @@
 
     h3 {
       font-size: var(--fontSize-sm);
+      font-family: "Lufga-500", sans-serif;
       padding-bottom: var(--padding-2xs);
 
       @media screen and (max-width: 768px) {
@@ -64,6 +65,7 @@
       border: 1px solid var(--black400);
       border-radius: var(--bdRadius-sm);
       padding: var(--padding-md);
+
       h5,
       p {
         font-size: var(--fontSize-xs);
@@ -99,9 +101,21 @@
         padding: var(--padding-2xs) 0 var(--padding-2xs) var(--padding-xs);
       }
 
+      .freeShipping,
+      .enjoyProduct,
+      .save,
+      .totalAmount {
+        h5 {
+          font-family: "Lufga-500", sans-serif;
+        }
+      }
       .enjoyProduct {
         .textContainer {
           width: 75%;
+
+          p {
+            font-family: "Lufga-300", sans-serif;
+          }
         }
         margin-bottom: 37px;
       }
@@ -119,6 +133,8 @@
 
         span {
           font-size: 24px;
+
+          font-family: "Lufga-500", sans-serif;
         }
       }
     }

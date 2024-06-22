@@ -99,6 +99,7 @@
   h6 {
     margin-bottom: var(--margin-xs);
     font-size: var(--fontSizexs);
+    font-family: "Lufga-500", sans-serif;
   }
 
   .bottomContainer {
@@ -110,6 +111,7 @@
       .price {
         font-size: var(--fontSize-xs);
         position: relative;
+        font-family: "Lufga-500", sans-serif;
 
         &::after {
           content: "$89";

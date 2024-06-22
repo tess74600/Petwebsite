@@ -1,5 +1,4 @@
 .secondSectionContainer {
-  font-family: "Lufga";
   position: relative;
   .arrow {
     cursor: pointer;
@@ -21,6 +20,7 @@
       text-transform: capitalize;
       font-size: var(--fontSize-lg);
       justify-content: space-between;
+      font-family: "Lufga-600", sans-serif;
       @media screen and (max-width: 768px) {
         font-size: var(--fontSize-sm);
       }
@@ -68,7 +68,7 @@
           height: 170px;
         }
         .cardTitle {
-          font-family: "Lufga";
+          font-family: "Lufga-500", sans-serif;
           font-size: var(--fontSize-sm);
         }
 
@@ -111,9 +111,9 @@
         text-transform: capitalize;
         h2 {
           font-size: 55px;
-          font-weight: 600;
           line-height: 65px;
           margin-bottom: var(--margin-xs);
+          font-family: "Lufga-600", sans-serif;
           @media screen and (max-width: 1440px) {
             font-size: var(--fontSize-md);
             line-height: 50px;
@@ -167,6 +167,7 @@
           text-transform: capitalize;
           position: relative;
           margin-bottom: var(--margin-xs);
+          font-family: "Lufga-600", sans-serif;
 
           &::before {
             content: url(./assets/grooming.svg);
@@ -222,6 +223,7 @@
           }
           h5 {
             margin: 0 var(--margin-xs) var(--margin-md) 0;
+            font-family: "Lufga-600", sans-serif;
           }
 
           .buttonVideo {

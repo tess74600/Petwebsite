@@ -63,7 +63,7 @@ const CartPage = () => {
               <h5>Total Amount</h5>
               <span>$125.75</span>
             </div>
-            <Button color="black" variant="rectangle" width="L">
+            <Button color="black" variant="rectangle" width="XXL">
               PLACE ORDER
             </Button>
           </div>

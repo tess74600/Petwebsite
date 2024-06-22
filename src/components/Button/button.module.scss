@@ -4,16 +4,17 @@
   gap: var(--gap-xs);
   align-items: center;
   cursor: pointer;
+  font-family: "Lufga-500", sans-serif;
 }
 
 .round {
-  border-radius: 25px;
+  border-radius: var(--bdRadius-md);
 }
 .ovale {
-  border-radius: 15px;
+  border-radius: var(--bdRadius-sm);
 }
 .rectangle {
-  border-radius: 10px;
+  border-radius: var(--bdRadius-xs);
 
   font-size: var(--fontSize-md);
 }
@@ -41,17 +42,26 @@
 .XL {
   padding: 8px 100px;
   justify-content: center;
-}
 
+  @media screen and (max-width: 768px) {
+    padding: 5px 80px;
+    font-size: 18px;
+  }
+}
+.XXL {
+  padding: 15px 35px;
+  justify-content: center;
+  font-size: var(--fontSize-xs);
+}
 .L {
   padding: 15px 30px;
   width: 200px;
-  font-size: 15px;
+  font-size: var(--fontSize-xs);
 }
 
 .M {
   padding: 13px 32px;
-  font-size: 15px;
+  font-size: var(--fontSize-xs);
   justify-content: center;
 }
 
@@ -70,4 +80,5 @@
   height: 30px;
   padding: 6px;
   justify-content: center;
+  font-family: "Lufga-400", sans-serif;
 }

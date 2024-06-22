@@ -1,5 +1,4 @@
 .horizontalCardContainer {
-  font-family: "Lufga";
   gap: var(--gap-sm);
   display: flex;
   align-items: center;
@@ -30,6 +29,7 @@
     }
     h4 {
       font-size: var(--fontSize-sm);
+      font-family: "Lufga-500", sans-serif;
       text-transform: capitalize;
       @media screen and (max-width: 768px) {
         font-size: var(--fontSize-xs);
@@ -54,9 +54,14 @@
   .price,
   .total {
     font-size: var(--fontSize-xs);
+    font-family: "Lufga-500", sans-serif;
   }
 
   .price {
     color: var(--grey400);
+  }
+
+  .quantities {
+    font-family: "Lufga-400", sans-serif;
   }
 }

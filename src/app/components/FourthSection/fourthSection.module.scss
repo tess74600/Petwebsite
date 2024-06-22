@@ -1,6 +1,5 @@
 .fourthSectionContainer {
   padding: var(--padding-2xl) 0;
-  font-family: "Lufga";
 
   @media screen and (max-width: 1224px) {
     padding: var(--padding-xl) 0;
@@ -14,6 +13,7 @@
       h2 {
         font-size: var(--fontSize-xl);
         text-transform: capitalize;
+        font-family: "Lufga-600", sans-serif;
         @media screen and (max-width: 768px) {
           font-size: var(--fontSize-lg);
         }

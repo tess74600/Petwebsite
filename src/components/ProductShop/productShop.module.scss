@@ -22,9 +22,10 @@
         height: auto;
       }
     }
-    h5 {
-      font-size: var(--fontSize-xs);
-      font-family: "Lufga";
-    }
+  }
+  h5,
+  .price {
+    font-size: var(--fontSize-xs);
+    font-family: "Lufga-500", sans-serif;
   }
 }

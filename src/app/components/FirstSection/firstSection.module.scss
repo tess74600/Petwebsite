@@ -2,7 +2,6 @@
   display: flex;
   position: relative;
   overflow: hidden;
-  font-family: "Lufga";
   .verticalSideBar {
     ul {
       display: flex;
@@ -57,7 +56,7 @@
       h1 {
         width: 60%;
         font-size: var(--fontSize-2xl);
-        font-family: "LufgaSemiBold", sans-serif;
+        font-family: "Lufga-600", sans-serif;
         text-transform: capitalize;
         position: relative;
         display: inline-block;
@@ -624,6 +623,7 @@
         h6 {
           font-size: var(--fontSize-sm);
           text-transform: capitalize;
+          font-family: "Lufa-500", sans-serif;
         }
 
         p {
@@ -670,9 +670,9 @@
 
             p {
               color: var(--white400);
-              font-weight: bold;
               font-size: var(--fontSize-2xs);
               margin: auto;
+              font-family: "Lufga-600", sans-serif;
             }
           }
         }

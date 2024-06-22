@@ -1,23 +1,22 @@
 .shopStandardContainer {
-  font-family: "Lufga";
-  padding: 30px 20px;
-  // padding-top: 30px;
-  // padding-left: 20px;
+  padding: 30px var(--padding-xs);
+
   display: flex;
-  gap: 30px;
+  gap: var(--gap-md);
 
   .shopSideBarFilter {
     width: 20%;
     h4 {
       padding-bottom: 15px;
       font-size: 20px;
+      font-family: "Lufga-500", sans-serif;
     }
     .filters {
       display: flex;
-      gap: 9px;
+      gap: var(--gap-xs);
       padding-bottom: 31px;
       h5 {
-        font-size: 16px;
+        font-size: var(--fontSize-xs);
       }
     }
     .searchProduct,
@@ -29,21 +28,22 @@
     .searchProduct {
       display: flex;
       justify-content: space-between;
-      border: 1px black solid;
-      border-radius: 10px;
-      padding: 13px 15px 13px 23px;
-      font-size: 15px;
+      border: 1px var(--black400) solid;
+      border-radius: var(--bdRadius-xs);
+      padding: var(--fontSize-2xs) var(--fontSize-xs) var(--fontSize-2xs)
+        var(--fontSize-sm);
+      font-size: --var(--fontSize-xs);
     }
 
     .priceContainer {
       .doubleRange {
         width: 100%;
-        margin-bottom: 19px;
+        margin-bottom: var(--margin-xs);
         .line {
           width: 100%;
           height: 2px;
-          background-color: grey;
-          border-radius: 3px;
+          background-color: var(--grey400);
+          border-radius: var(--bdRadius-2xs);
           position: relative;
         }
         .middleLine {
@@ -56,8 +56,8 @@
         .thumb {
           width: 24px;
           height: 24px;
-          background-color: white;
-          border: 1px solid grey;
+          background-color: var(--white400);
+          border: 1px solid var(--grey400);
           border-radius: 50%;
           top: -10px;
           position: absolute;
@@ -84,7 +84,7 @@
       .categoriesContent {
         display: flex;
         flex-direction: column;
-        gap: 10px;
+        gap: var(--gap-xs);
       }
     }
 
@@ -105,12 +105,18 @@
       align-items: center;
       justify-content: space-between;
       margin-bottom: 35px;
+
+      @media screen and (max-width: 768px) {
+        flex-direction: column;
+        align-items: start;
+        gap: var(--gap-xs);
+      }
       .left,
       .right {
         display: flex;
         align-items: center;
-        gap: 10px;
-        font-size: 14px;
+        gap: var(--gap-xs);
+        font-size: var(--fontSize-xs);
       }
 
       .arrow {
@@ -129,7 +135,7 @@
     .results {
       display: flex;
       flex-wrap: wrap;
-      gap: 30px;
+      gap: var(--gap-md);
     }
   }
 }

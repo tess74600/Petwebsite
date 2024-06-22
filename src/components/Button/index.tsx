@@ -12,7 +12,7 @@ const Button = ({
   children: ReactNode;
   variant?: "round" | "rectangle" | "ovale";
   color?: "black" | "white" | "transparent";
-  width?: "XL" | "L" | "M" | "S" | "XS" | "XXS";
+  width?: "XXL" | "XL" | "L" | "M" | "S" | "XS" | "XXS";
   withBorder?: boolean;
 }) => {
   return (

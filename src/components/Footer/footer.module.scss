@@ -3,7 +3,6 @@
   position: relative;
   border-top: 1px var(--grey400) solid;
   overflow-y: hidden;
-  font-family: "Lufga", sans-serif;
   overflow-x: hidden;
   .catFood {
     position: absolute;
@@ -64,11 +63,11 @@
 
       h4 {
         text-transform: capitalize;
-        font-family: "LufgaMedium", sans-serif;
+        font-family: "Lufga-500", sans-serif;
       }
       h3 {
         font-size: var(--fontSize-sm);
-        font-family: "LufgaSemiBold", sans-serif;
+        font-family: "Lufga-600", sans-serif;
       }
       .footerNewsletter {
         margin-top: var(--margin-md);
@@ -88,9 +87,10 @@
             width: 200px;
           }
           input {
-            font-size: var(--fontSize-xs);
+            font-size: var(--fontSize-2xs);
             background: none;
             border: none;
+            font-family: "Lufga-400", sans-serif;
           }
         }
       }
@@ -192,6 +192,7 @@
   .paiements {
     display: flex;
     gap: var(--gap-sm);
+    font-family: "Roboto-400", sans-serif;
   }
 }
 
