@@ -1,15 +1,14 @@
 .shopStandardContainer {
   padding: 30px var(--padding-xs);
-
   display: flex;
   gap: var(--gap-md);
 
   .shopSideBarFilter {
     width: 20%;
     h4 {
-      padding-bottom: 15px;
-      font-size: 20px;
+      font-size: var(--fontSize-sm);
       font-family: "Lufga-500", sans-serif;
+      padding-bottom: var(--padding-2xs);
     }
     .filters {
       display: flex;

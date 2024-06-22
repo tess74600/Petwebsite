@@ -2,7 +2,6 @@
 import React, { useRef, useState } from "react";
 import styles from "./header.module.scss";
 import Link from "next/link";
-import classNames from "classnames";
 
 // SVG
 import Logo from "./assets/Logo.svg";
@@ -11,7 +10,10 @@ import Heart from "./assets/heart1.svg";
 import Shopping from "./assets/shopping-cart 1.svg";
 import Lines from "./assets/lines.svg";
 const Header = () => {
-  const [displayMenu, setDisplayMenu] = useState(false);
+  const [isOpen, setIsOpen] = useState(false);
+  const toggleMenu = () => {
+    setIsOpen(!isOpen);
+  };
 
   return (
     <>
@@ -52,10 +54,9 @@ const Header = () => {
               </li>
             </ul>
             <ul
-              className={classNames(
-                styles.navRight,
-                `${displayMenu && ".active"}`
-              )}
+              className={
+                isOpen ? `${styles.navRight} ${styles.active}` : styles.navRight
+              }
             >
               <li>
                 <a href="" className={styles.login}>
@@ -81,10 +82,8 @@ const Header = () => {
 
             <Lines
               alt="menu"
-              id={styles.menu}
-              onClick={() => {
-                setDisplayMenu(true);
-              }}
+              className={styles.menuIcons}
+              onClick={toggleMenu}
             />
           </nav>
         </div>

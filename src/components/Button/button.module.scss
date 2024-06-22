@@ -39,6 +39,12 @@
   border-width: 1px;
   border-style: solid;
 }
+
+.XXL {
+  padding: 15px 35px;
+  justify-content: center;
+  font-size: var(--fontSize-xs);
+}
 .XL {
   padding: 8px 100px;
   justify-content: center;
@@ -47,11 +53,6 @@
     padding: 5px 80px;
     font-size: 18px;
   }
-}
-.XXL {
-  padding: 15px 35px;
-  justify-content: center;
-  font-size: var(--fontSize-xs);
 }
 .L {
   padding: 15px 30px;

@@ -61,60 +61,25 @@
         .login {
           text-decoration: underline;
         }
-        // @media screen and (max-width: 1200px) {
-        //   display: none;
-        // }
-        // @media screen and (max-width: 1200px) {
-        //   position: fixed;
-        //   right: -100%;
-        //   top: 5%;
-        //   width: 100%;
-        //   text-align: center;
-        //   transition: 0.25s;
-        //   flex-direction: column;
-        // }
       }
-      // &.navRight.active {
-      //   color: red;
-      //   right: 10%;
-      // }
 
-      // .navRight.active {
-      //   display: flex;
-      //   color: red;
-      //   position: fixed;
-      //   right: -20%;
-      //   top: 5%;
-      //   width: 100%;
-      //   text-align: center;
-      //   transition: 0.25s;
-      //   flex-direction: column;
-      // }
-
-      #menu {
+      .menuIcons {
         display: none;
         cursor: pointer;
       }
 
-      @media screen and (max-width: 768px) {
-        #menu {
+      @media screen and (max-width: 1224px) {
+        .menuIcons {
           display: block;
         }
         .navRight {
-          position: fixed;
-          right: 10%;
-          top: 5%;
-          width: 100%;
-          text-align: center;
-          transition: 0.25s;
-          flex-direction: column;
-          opacity: 0;
           display: none;
         }
-        .active {
-          opacity: 1;
-          color: rebeccapurple;
-          right: 10%;
+        .navRight.active {
+          position: fixed;
+          top: 70px;
+          right: 50px;
+          display: flex;
         }
       }
     }
