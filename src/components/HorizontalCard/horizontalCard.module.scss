@@ -1,15 +1,10 @@
 .horizontalCardContainer {
-  gap: var(--gap-sm);
   display: flex;
   align-items: center;
-  .productContainer {
+  td:first-of-type {
     display: flex;
     align-items: center;
-    width: 45%;
-    margin-right: var(--margin-xs);
-    @media screen and (max-width: 768px) {
-      margin-right: var(--margin-2xs);
-    }
+    width: 40%;
   }
   .productIdentity {
     display: flex;
@@ -37,17 +32,11 @@
     }
   }
 
-  .details {
-    display: flex;
-    width: 50%;
-    align-items: center;
-    justify-content: space-around;
-  }
-
   .quantities,
   .total {
     display: flex;
     align-items: center;
+    justify-content: end;
     gap: var(--gap-xs);
   }
 
@@ -61,7 +50,15 @@
     color: var(--grey400);
   }
 
+  .quantities,
+  .price,
+  .total {
+    width: 20%;
+    text-align: center;
+  }
+
   .quantities {
     font-family: "Lufga-400", sans-serif;
+    justify-content: center;
   }
 }

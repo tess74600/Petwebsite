@@ -31,10 +31,10 @@ const FirstSection = () => {
           <li>
             <a href=""> Twitter</a>
           </li>
-          <li>
-            <a href=""> Let's talk</a>
-          </li>
         </ul>
+        <li className={styles.lastItem}>
+          <a href=""> Let's talk</a>
+        </li>
       </div>
       <div className={styles.centralContainer}>
         <div className={styles.top}>

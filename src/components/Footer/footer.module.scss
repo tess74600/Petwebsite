@@ -6,18 +6,21 @@
   overflow-x: hidden;
   .catFood {
     position: absolute;
-    bottom: -6px;
-    left: 48px;
+    bottom: -20px;
+    left: -30px;
     background: transparent;
 
-    @media screen and (max-width: 1440px) {
-      bottom: -120px;
-      left: 550px;
+    @media screen and (max-width: 1300px) {
+      left: -40px;
     }
-    @media screen and (max-width: 768px) {
-      top: 0;
-      left: 80px;
-      rotate: 180deg;
+    @media screen and (max-width: 1200px) {
+      left: -45px;
+    }
+    @media screen and (max-width: 1120px) {
+      left: 420px;
+    }
+    @media screen and (max-width: 1000px) {
+      display: none;
     }
   }
   .footerContainer {
@@ -27,15 +30,11 @@
 
     .footerTop {
       display: flex;
-      gap: var(--gap-xl);
+      justify-content: space-between;
 
-      @media screen and (max-width: 1440px) {
-        gap: var(--gap-sm);
-      }
-      .footerContact {
-        @media screen and (max-width: 768px) {
-          margin-left: 200px;
-        }
+      @media screen and (max-width: 1120px) {
+        display: inline-flex;
+        flex-wrap: wrap;
       }
 
       .logoContainer {
@@ -51,6 +50,9 @@
           font-family: "Jost", sans-serif;
           font-size: var(--fontSize-lg);
           font-weight: 600;
+          @media screen and (max-width: 1120px) {
+            font-size: var(--fontSize-md);
+          }
         }
       }
       h5,
@@ -80,12 +82,11 @@
           background: var(--pink300);
           padding: 15px;
           margin-top: var(--margin-2xs);
-          width: 299px;
-          height: 45px;
-
-          @media screen and (max-width: 1440px) {
-            width: 200px;
+          width: 80%;
+          @media screen and (max-width: 1120px) {
+            width: 50%;
           }
+
           input {
             font-size: var(--fontSize-2xs);
             background: none;
@@ -95,7 +96,15 @@
         }
       }
     }
-
+    .footerContact,
+    .posts,
+    .stores,
+    .links,
+    .menuFooter {
+      @media screen and (max-width: 1120px) {
+        width: 50%;
+      }
+    }
     .posts,
     .stores,
     .links,
@@ -104,9 +113,6 @@
 
       @media screen and (max-width: 1440px) {
         margin-top: var(--margin-lg);
-      }
-      @media screen and (max-width: 768px) {
-        display: none;
       }
     }
     .posts {
@@ -126,12 +132,7 @@
             background: var(--white400);
             border-radius: var(--bdRadius-xs);
             overflow: hidden;
-            width: 60px;
-            height: 60px;
-            .img60 {
-              width: 60px;
-              height: auto;
-            }
+            display: flex;
           }
 
           .textContainer {
@@ -164,20 +165,6 @@
         }
       }
     }
-
-    .stores {
-      padding: 0 var(--margin-2xl);
-      @media screen and (max-width: 1440px) {
-        padding: 0 var(--margin-md);
-      }
-    }
-    .links {
-      padding-right: var(--margin-2xl);
-
-      @media screen and (max-width: 1440px) {
-        padding-right: var(--margin-lg);
-      }
-    }
   }
 }
 
@@ -188,6 +175,11 @@
   padding: var(--margin-xs) 0;
   text-transform: capitalize;
   border-top: 1px var(--black400) solid;
+
+  @media screen and (max-width: 860px) {
+    flex-direction: column;
+    gap: 20px;
+  }
 
   .paiements {
     display: flex;

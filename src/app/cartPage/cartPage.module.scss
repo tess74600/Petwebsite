@@ -1,41 +1,45 @@
 .cartPageContainer {
   display: flex;
-  padding: var(--padding-2xl) var(--padding-xl);
-  gap: var(--gap-xl);
+  justify-content: space-between;
+  padding: var(--padding-2xl) 0;
 
-  @media screen and (max-width: 768px) {
-    padding-left: var(--padding-2xs);
+  @media screen and (max-width: 1000px) {
     flex-direction: column;
+    gap: 50px;
   }
   .products {
     width: 60%;
-    margin-left: var(--margin-lg);
-    @media screen and (max-width: 768px) {
+    table-layout: fixed;
+    @media screen and (max-width: 1000px) {
       width: 90%;
       margin: 0 auto;
     }
-    .productTitles {
+
+    tr {
+      display: flex;
+      width: 100%;
+      justify-content: space-between;
+    }
+    thead {
       display: flex;
       margin-bottom: var(--margin-xs);
+      width: 100%;
 
-      h4 {
+      th {
         font-size: var(--fontSize-sm);
-        margin-right: var(--margin-lg);
         font-family: "DM-SANS-700", sans-serif;
-
-        @media screen and (max-width: 768px) {
-          margin-right: var(--padding-md);
+        width: 20%;
+        &:first-of-type {
+          width: 40%;
+          text-align: left;
         }
 
-        &:first-of-type {
-          margin-right: 360px;
-          @media screen and (max-width: 768px) {
-            margin-right: 250px;
-          }
+        &:last-of-type {
+          text-align: right;
         }
       }
     }
-    .productsContainer {
+    tbody {
       display: flex;
       flex-direction: column;
       gap: var(--gap-sm);
@@ -46,7 +50,7 @@
   }
   .cartTotal {
     width: 35%;
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 1000px) {
       width: 90%;
       margin: 0 auto;
     }
@@ -56,7 +60,7 @@
       font-family: "Lufga-500", sans-serif;
       padding-bottom: var(--padding-2xs);
 
-      @media screen and (max-width: 768px) {
+      @media screen and (max-width: 1000px) {
         text-align: center;
       }
     }

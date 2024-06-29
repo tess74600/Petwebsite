@@ -1,5 +1,6 @@
 .secondSectionContainer {
   position: relative;
+
   .arrow {
     cursor: pointer;
   }
@@ -7,9 +8,8 @@
     background: var(--white400);
   }
   .productCategory {
-    @media screen and (max-width: 1440px) {
-      padding: var(--padding-2xl) 0;
-    }
+    padding: var(--padding-2xl) 0;
+
     @media screen and (max-width: 768px) {
       padding: var(--padding-lg) 0;
     }
@@ -53,8 +53,7 @@
         background: #efe9ff;
       }
       .card {
-        width: 234px;
-        height: 200px;
+        flex: 1;
         border-radius: var(--bdRadius-md);
         overflow: hidden;
         display: flex;
@@ -63,10 +62,6 @@
         align-items: center;
         padding-top: var(--padding-2xs);
 
-        @media screen and (max-width: 768px) {
-          width: 220px;
-          height: 170px;
-        }
         .cardTitle {
           font-family: "Lufga-500", sans-serif;
           font-size: var(--fontSize-sm);
@@ -95,10 +90,7 @@
   .petCareServices {
     background: var(--pink300);
     padding: var(--padding-2xl) 0;
-
-    @media screen and (max-width: 1440px) {
-      padding: var(--padding-xl) 0;
-    }
+    padding: var(--padding-xl) 0;
 
     .petCareServicesContainer {
       margin: 0 auto;
@@ -109,6 +101,7 @@
       }
       .leftContainer {
         text-transform: capitalize;
+        flex: 2;
         h2 {
           font-size: 55px;
           line-height: 65px;
@@ -147,15 +140,12 @@
       .centralContainer {
         border: 1px var(--black400) solid;
         border-radius: var(--bdRadius-md);
-        width: 410px;
+        flex: 2;
         padding: var(--padding-md);
         display: flex;
         flex-direction: column;
-        @media screen and (max-width: 1224px) {
-          width: 450px;
-        }
+
         @media screen and (max-width: 768px) {
-          width: 500px;
           justify-content: center;
           align-items: center;
           margin: 0 auto;
@@ -190,19 +180,21 @@
         display: flex;
         flex-direction: column;
         justify-content: space-between;
+        flex: 1;
+
         .rightContainerTop {
+          flex: 1;
           #topImg {
             border-radius: 0 var(--bdRadius-lg) 0 0;
           }
         }
-        @media screen and (max-width: 768px) {
+        @media screen and (max-width: 1000px) {
           display: none;
         }
 
         .rightContainerBottom {
+          flex: 1;
           background: #ffa048;
-          height: 219px;
-          width: 410px;
           display: flex;
           border-radius: var(--bdRadius-md);
           text-transform: uppercase;

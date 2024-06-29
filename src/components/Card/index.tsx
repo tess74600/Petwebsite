@@ -12,6 +12,7 @@ import pillow from "./assets/cushionDog.png";
 import ball from "./assets/toyBall.png";
 import watchList from "./assets/watchlist.png";
 import bed from "@/components/Footer/assets/bed.png";
+// import belt from "./assets/belt.jpg 15-18-38-145.jpg";
 import belt from "@/components/Footer/assets/belt.jpg";
 //SVG
 import Exchange from "./assets/exchange.svg";

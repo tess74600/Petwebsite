@@ -3,13 +3,25 @@
 
   .flexContainer {
     width: 90%;
+    position: relative;
     margin: var(--margin-sm) auto;
     display: flex;
     align-items: center;
+    gap: var(--gap-lg);
 
+    @media screen and (max-width: 1224px) {
+      justify-content: space-between;
+      align-items: center;
+
+      &.larger {
+        height: 250px;
+        align-items: start;
+      }
+    }
     .logoContainer {
       display: flex;
       align-items: center;
+
       gap: var(--gap-xs);
 
       h2 {
@@ -22,23 +34,38 @@
         }
       }
     }
-
-    nav {
-      margin-left: var(--margin-lg);
+    .navbar {
+      width: 100%;
       display: flex;
       align-items: center;
-      gap: 672px;
+      justify-content: space-between;
       font-size: var(--fontSize-xs);
-
-      @media screen and (max-width: 1440px) {
-        gap: 250px;
-      }
       @media screen and (max-width: 1224px) {
-        gap: 200px;
-      }
-      @media screen and (max-width: 768px) {
-        margin-left: var(--margin-sm);
-        gap: 90px;
+        display: none;
+
+        .logoContainer {
+          display: block;
+        }
+
+        &.navbar.active {
+          display: flex;
+          flex-direction: column;
+          position: absolute;
+          top: 20%;
+          left: 0;
+          width: 10%;
+          .navLeft,
+          .navRight {
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: var(--gap-2xs);
+
+            li {
+              cursor: pointer;
+            }
+          }
+        }
       }
 
       .navLeft {
@@ -48,6 +75,7 @@
         @media screen and (max-width: 768px) {
           gap: var(--gap-md);
         }
+
         li {
           display: flex;
           gap: var(--gap-2xs);
@@ -62,25 +90,14 @@
           text-decoration: underline;
         }
       }
+    }
 
-      .menuIcons {
-        display: none;
-        cursor: pointer;
-      }
+    .menuIcons {
+      display: none;
+      cursor: pointer;
 
       @media screen and (max-width: 1224px) {
-        .menuIcons {
-          display: block;
-        }
-        .navRight {
-          display: none;
-        }
-        .navRight.active {
-          position: fixed;
-          top: 70px;
-          right: 50px;
-          display: flex;
-        }
+        display: block;
       }
     }
   }

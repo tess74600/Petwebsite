@@ -10,20 +10,30 @@ import Heart from "./assets/heart1.svg";
 import Shopping from "./assets/shopping-cart 1.svg";
 import Lines from "./assets/lines.svg";
 const Header = () => {
-  const [isOpen, setIsOpen] = useState(false);
+  const [isClosed, setIsClosed] = useState(false);
   const toggleMenu = () => {
-    setIsOpen(!isOpen);
+    setIsClosed(!isClosed);
   };
 
   return (
     <>
       <header className={styles.headerContainer}>
-        <div className={styles.flexContainer}>
+        <div
+          className={
+            isClosed
+              ? `${styles.flexContainer} ${styles.larger}`
+              : styles.flexContainer
+          }
+        >
           <div className={styles.logoContainer}>
             <Logo alt="logo" />
             <h2>petperks</h2>
           </div>
-          <nav>
+          <nav
+            className={
+              isClosed ? `${styles.navbar} ${styles.active}` : styles.navbar
+            }
+          >
             <ul className={styles.navLeft}>
               <Link href="/">
                 <li>
@@ -53,11 +63,7 @@ const Header = () => {
                 <span>✦</span>
               </li>
             </ul>
-            <ul
-              className={
-                isOpen ? `${styles.navRight} ${styles.active}` : styles.navRight
-              }
-            >
+            <ul className={styles.navRight}>
               <li>
                 <a href="" className={styles.login}>
                   Login/Register
@@ -65,27 +71,23 @@ const Header = () => {
               </li>
               <li>
                 <a href="">
-                  <Search alt="search" className={styles.hiddenMenu} />
+                  <Search alt="search" />
                 </a>
               </li>
               <li>
                 <a href="">
-                  <Heart alt="heart" className={styles.hiddenMenu} />
+                  <Heart alt="heart" />
                 </a>
               </li>
-              <Link href="/checkout" className={styles.hiddenMenu}>
+              <Link href="/checkout">
                 <li>
                   <Shopping alt="shopping" />
                 </li>
               </Link>
             </ul>
-
-            <Lines
-              alt="menu"
-              className={styles.menuIcons}
-              onClick={toggleMenu}
-            />
           </nav>
+
+          <Lines alt="menu" className={styles.menuIcons} onClick={toggleMenu} />
         </div>
       </header>
     </>

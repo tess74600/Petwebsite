@@ -189,45 +189,48 @@ const HorizontalCard = ({
 
   let [total, setTotal] = useState(0);
   let [number, setNumber] = useState(0);
+  let [display, setDisplay] = useState(true);
   return (
-    <div className={styles.horizontalCardContainer}>
-      {functionSwitch(product)}
-      <div className={styles.details}>
-        <div className={styles.price}>{price}</div>
-        <div className={styles.quantities}>
-          <Button width="XXS">
-            <Remove
-              onClick={() => {
-                number > 0
-                  ? (setNumber(number - 1), setTotal(total - 40))
-                  : (setNumber(0), setTotal(0));
-              }}
-            />
-          </Button>
-          <Button width="XXS" color="white">
-            {number}
-          </Button>
-          <Button width="XXS">
-            <Add
-              onClick={() => {
-                setNumber(number + 1);
-                setTotal(total + 40);
-              }}
-            />
-          </Button>
-        </div>
-        <div className={styles.total}>
-          ${total}
-          <Button width="XXS">
-            <Delete
-              onClick={() => {
-                setTotal(0), setNumber(0);
-              }}
-            />
-          </Button>
-        </div>
-      </div>
-    </div>
+    <>
+      {display && (
+        <tr className={styles.horizontalCardContainer}>
+          <td> {functionSwitch(product)}</td>
+          <td className={styles.price}>{price}</td>
+          <td className={styles.quantities}>
+            <Button width="XXS">
+              <Remove
+                onClick={() => {
+                  number > 0
+                    ? (setNumber(number - 1), setTotal(total - 40))
+                    : (setNumber(0), setTotal(0));
+                }}
+              />
+            </Button>
+            <Button width="XXS" color="white">
+              {number}
+            </Button>
+            <Button width="XXS">
+              <Add
+                onClick={() => {
+                  setNumber(number + 1);
+                  setTotal(total + 40);
+                }}
+              />
+            </Button>
+          </td>
+          <td className={styles.total}>
+            ${total}
+            <Button width="XXS">
+              <Delete
+                onClick={() => {
+                  setDisplay(false);
+                }}
+              />
+            </Button>
+          </td>
+        </tr>
+      )}
+    </>
   );
 };
 

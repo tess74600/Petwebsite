@@ -61,8 +61,8 @@ const Footer = () => {
                   <div className={styles.imgContainer}>
                     <Image
                       src={belt}
-                      width={300}
-                      height={300}
+                      width={60}
+                      height={60}
                       alt=""
                       className={styles.img60}
                     />
@@ -76,13 +76,7 @@ const Footer = () => {
                 </div>
                 <div className={styles.postContainer}>
                   <div className={styles.imgContainer}>
-                    <Image
-                      src={bed}
-                      width={800}
-                      height={800}
-                      alt=""
-                      className={styles.img60}
-                    />
+                    <Image src={bed} width={60} height={60} alt="" />
                   </div>
                   <div className={styles.textContainer}>
                     <a
@@ -98,8 +92,8 @@ const Footer = () => {
                   <div className={styles.imgContainer}>
                     <Image
                       src={toy}
-                      width={2500}
-                      height={2500}
+                      width={60}
+                      height={60}
                       alt=""
                       className={styles.img60}
                     />

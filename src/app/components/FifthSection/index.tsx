@@ -38,6 +38,7 @@ const FifthSection = () => {
               height={340}
               alt="img"
               id={styles.imgFirst}
+              className={styles.img}
             />
           </div>
           <div className={classNames(styles.ovfHidden, styles.second)}>
@@ -47,6 +48,7 @@ const FifthSection = () => {
               height={240}
               alt="img"
               id={styles.imgSecond}
+              className={styles.img}
             />
           </div>
         </div>
@@ -58,15 +60,17 @@ const FifthSection = () => {
               height={340}
               alt="img"
               id={styles.imgThird}
+              className={styles.img}
             />
           </div>
           <div className={classNames(styles.ovfHidden, styles.fourth)}>
             <Image
               src={fourth}
               width={300}
-              height={340}
+              height={240}
               alt="img"
               id={styles.imgFourth}
+              className={styles.img}
             />
           </div>
         </div>
@@ -78,6 +82,7 @@ const FifthSection = () => {
               height={610}
               alt="img"
               id={styles.imgFifth}
+              className={styles.img}
             />
             <div className={styles.add}>
               <Add alt="add" />
@@ -92,6 +97,7 @@ const FifthSection = () => {
               height={340}
               alt="img"
               id={styles.imgSixth}
+              className={styles.img}
             />
           </div>
           <div className={classNames(styles.ovfHidden, styles.seventh)}>
@@ -101,6 +107,7 @@ const FifthSection = () => {
               height={240}
               alt="img"
               id={styles.imgSeventh}
+              className={styles.img}
             />
           </div>
         </div>
@@ -112,6 +119,7 @@ const FifthSection = () => {
               height={340}
               alt="img"
               id={styles.imgEighth}
+              className={styles.img}
             />
           </div>
           <div className={classNames(styles.ovfHidden, styles.fourth)}>
@@ -121,10 +129,12 @@ const FifthSection = () => {
               height={240}
               alt="img"
               id={styles.imgNinth}
+              className={styles.img}
             />
           </div>
         </div>
       </div>
+
       <div className={styles.fifthCentral}>
         <div className={styles.textContainer}>
           <h2>What pet lovers say about us?</h2>
