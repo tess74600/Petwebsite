@@ -49,7 +49,7 @@ const FourthSection = () => {
         <Card title="Dog Rope Combo" source="rope" />
         <Card title="Squeaky Ball Dog Toy" source="ball" />
         <Card title="Dog Small Pillow" source="pillow" />
-        <Card title="Pet Bed For Dog" source="bed" />
+        {/* <Card title="Pet Bed For Dog" source="bed" /> */}
       </div>
     </div>
   );

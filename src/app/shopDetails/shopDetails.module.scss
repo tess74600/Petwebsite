@@ -1,0 +1,201 @@
+.nav {
+  gap: 10px;
+  display: flex;
+  font-size: var(--fontSize-xs);
+  padding: 36px 0;
+}
+
+.top {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+  .imgContainer {
+    background: var(--white400);
+    border: 1px var(--black400) solid;
+    border-radius: var(--bdRadius-md);
+    overflow: hidden;
+    position: relative;
+    height: 640px;
+
+    .iconContainer {
+      background: var(--pink300);
+      width: 40px;
+      height: 40px;
+      border-radius: var(--bdRadius-xs);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: absolute;
+      top: 28px;
+      left: 28px;
+    }
+    .topImg {
+      width: 73%;
+      height: auto;
+      margin: 62px 76px;
+    }
+  }
+  .textContainer {
+    h2 {
+      font-family: "Lufga-500", sans-serif;
+      font-size: 35px;
+      text-transform: capitalize;
+      margin-bottom: 8px;
+    }
+    p {
+      font-size: var(--fontSize-xs);
+      margin-bottom: 23px;
+    }
+
+    .priceAndQuantity {
+      display: flex;
+      h3 {
+        font-family: "Lufga-600", sans-serif;
+        font-size: var(--fontSize-xs);
+      }
+
+      .price {
+        font-family: "Lufga-500", sans-serif;
+        font-size: 25px;
+        display: flex;
+        align-items: flex-end;
+        gap: 9px;
+
+        span {
+          font-family: "Lufga-400", sans-serif;
+          text-decoration: line-through;
+          color: rgba(102, 102, 102, 1);
+          font-size: 18px;
+        }
+      }
+    }
+    .informations {
+      border-top: 1px solid var(--grey400);
+      padding-top: 15px;
+      div {
+        display: flex;
+        gap: 10px;
+        h4 {
+          font-family: "Lufga-600", sans-serif;
+          font-size: var(--fontSize-xs);
+        }
+        h5,
+        pre {
+          font-size: 14px;
+          font-family: "Lufga-400", sans-serif;
+        }
+        pre {
+          font-size: 14px;
+          color: rgba(36, 38, 43, 1);
+        }
+      }
+
+      .socialsLogos {
+        display: flex;
+        gap: 20px;
+      }
+    }
+  }
+}
+
+.choices {
+  padding-top: 53px;
+  padding-bottom: 9px;
+  border-bottom: 1px var(--grey400) solid;
+  display: flex;
+  justify-content: center;
+  gap: 68px;
+  h6 {
+    font-family: "Lufga-500", sans-serif;
+    font-size: 16px;
+  }
+}
+
+.central {
+  padding-top: 50px;
+  h3 {
+    font-family: "Lufga-500", sans-serif;
+    font-size: 18px;
+    text-transform: capitalize;
+    padding-bottom: 15px;
+  }
+  p {
+    font-family: "Lufga-300", sans-serif;
+    font-size: 16px;
+    text-align: center;
+    padding-bottom: 38px;
+  }
+
+  .picturesContainer {
+    .topPicturesContainer {
+      display: flex;
+      gap: 30px;
+      .left {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 41px;
+        .titleContainer {
+          display: flex;
+          align-items: center;
+          gap: 18px;
+          font-size: 18px;
+          padding-bottom: 38px;
+        }
+        .pictureContainer {
+          border-radius: var(--bdRadius-md);
+          width: 100%;
+          overflow: hidden;
+
+          .leftImg {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+          }
+        }
+      }
+    }
+
+    p {
+      font-family: "Lufga-300", sans-serif;
+      font-size: 16px;
+      text-align: center;
+      padding-bottom: 30px;
+    }
+
+    .bottomPictureContainer {
+      border-radius: var(--bdRadius-md);
+      width: 100%;
+      overflow: hidden;
+
+      .leftImg {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+      }
+    }
+  }
+}
+
+.bottom {
+  padding-top: 74px;
+  .bottomTitle {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 36px;
+    h2 {
+      font-family: "Lufga-600", sans-serif;
+      font-size: 28px;
+    }
+    div {
+      display: flex;
+      gap: 5px;
+      font-size: 14px;
+    }
+  }
+  .cardsContainer {
+    display: flex;
+    gap: var(--gap-xl);
+    flex-wrap: wrap;
+  }
+}
