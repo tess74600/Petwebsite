@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "./fourthSection.module.scss";
+import styles from "./displayProductsSection.module.scss";
 
 //COMPONENTS
 import Card from "@/components/Card";
@@ -8,9 +8,9 @@ import Button from "@/components/Button";
 //SVG
 import AllProducts from "./assets/AllProducts.svg";
 
-const FourthSection = () => {
+const DisplayProductsSection = () => {
   return (
-    <div className={styles.fourthSectionContainer}>
+    <div className={styles.displayProductsSectionContainer}>
       <div className={styles.titleContent}>
         <div>
           <div className={styles.title}>
@@ -55,4 +55,4 @@ const FourthSection = () => {
   );
 };
 
-export default FourthSection;
+export default DisplayProductsSection;

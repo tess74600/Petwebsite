@@ -29,13 +29,14 @@
         font-size: var(--fontSize-sm);
         font-family: "DM-SANS-700", sans-serif;
         width: 20%;
+        text-align: center;
         &:first-of-type {
           width: 40%;
           text-align: left;
         }
 
         &:last-of-type {
-          text-align: right;
+          width: 40%;
         }
       }
     }

@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "./firstSection.module.scss";
+import styles from "./headerSection.module.scss";
 import Image from "next/image";
 
 // SVG
@@ -17,9 +17,9 @@ import face from "./assets/faceMan.jpg";
 //COMPONENTS
 import Button from "@/components/Button";
 
-const FirstSection = () => {
+const HeaderSection = () => {
   return (
-    <div className={styles.firstSectionContainer}>
+    <div className={styles.headerSectionContainer}>
       <div className={styles.verticalSideBar}>
         <ul>
           <li>
@@ -140,4 +140,4 @@ const FirstSection = () => {
   );
 };
 
-export default FirstSection;
+export default HeaderSection;

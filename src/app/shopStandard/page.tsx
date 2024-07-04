@@ -11,7 +11,7 @@ import GlobalContainer from "../components/GlobalContainer";
 
 //SVG
 import Filter from "./assets/filter.svg";
-import Search from "@/components/Header/assets/search.svg";
+import Search from "@/components/Navbar/assets/search.svg";
 import X from "./assets/x.svg";
 import Chevron from "./assets/chevronDown.svg";
 import List1 from "./assets/list1.svg";

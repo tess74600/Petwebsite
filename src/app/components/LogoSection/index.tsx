@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "./thirdSection.module.scss";
+import styles from "./logoSection.module.scss";
 
 // SVG
 import Logo1 from "./assets/logoipsum1.svg";
@@ -10,9 +10,9 @@ import Logo5 from "./assets/logoipsum5.svg";
 import Logo7 from "./assets/logoipsum7.svg";
 import Logo6 from "./assets/logoipsum6.svg";
 
-const ThirdSection = () => {
+const LogoSection = () => {
   return (
-    <div className={styles.thirdSectionContainer}>
+    <div className={styles.logoSectionContainer}>
       <div>
         <Logo1 alt="logo1" />
         <Logo2 alt="logo2" />
@@ -26,4 +26,4 @@ const ThirdSection = () => {
   );
 };
 
-export default ThirdSection;
+export default LogoSection;

@@ -3,7 +3,7 @@ import styles from "./footer.module.scss";
 import Image from "next/image";
 
 // SVG
-import Logo from "@/components/Header/assets/Logo.svg";
+import Logo from "@/components/Navbar/assets/Logo.svg";
 import Arrow from "./assets/arrowRight.svg";
 import Paiement from "./assets/paiement.svg";
 import PawVector from "./assets/paw.svg";

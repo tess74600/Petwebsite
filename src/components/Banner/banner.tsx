@@ -9,6 +9,7 @@ import Chevron from "./assets/chevronRight.svg";
 import checkoutBanner from "./assets/checkoutBanner.jpg";
 import cartPageBanner from "./assets/cartPageBanner.jpg";
 import shopStandardBanner from "./assets/shopStandardBanner.jpg";
+import Link from "next/link";
 const Banner = ({ page, source }: { page: string; source: string }) => {
   const imgSwitch = (parametre: string) => {
     switch (parametre) {
@@ -64,7 +65,10 @@ const Banner = ({ page, source }: { page: string; source: string }) => {
         <div className={styles.textContent}>
           <h2>{page}</h2>
           <div className={styles.textContainer}>
-            <h6> Home</h6>
+            {/* <h6> Home</h6> */}
+            <Link href="/">
+              <h6> Home</h6>
+            </Link>
             <Chevron />
             <h6>{page}</h6>
           </div>

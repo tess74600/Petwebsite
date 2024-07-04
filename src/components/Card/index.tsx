@@ -10,15 +10,13 @@ import bone from "./assets/bone.png";
 import rope from "./assets/rope.png";
 import pillow from "./assets/cushionDog.png";
 import ball from "./assets/toyBall.png";
-import watchList from "./assets/watchlist.png";
 import bed from "@/components/Footer/assets/bed.png";
-// import belt from "./assets/belt.jpg 15-18-38-145.jpg";
 import belt from "@/components/Footer/assets/belt.jpg";
 //SVG
 import Exchange from "./assets/exchange.svg";
 import Shopping from "./assets/shopping-cart.svg";
 import Visible from "./assets/visible1.svg";
-import Star from "@/app/components/FirstSection/assets/Star18.svg";
+import Star from "@/app/components/HeaderSection/assets/Star18.svg";
 import Heart from "./assets/watchlist.svg";
 
 const Card = ({ title, source }: { title: string; source: string }) => {
@@ -158,7 +156,11 @@ const Card = ({ title, source }: { title: string; source: string }) => {
             />
           </div>
           <div className={styles.iconsContainer}>
-            {<Visible alt="visible" className={styles.icon} />}
+            <Visible
+              alt="visible"
+              className={styles.icon}
+              onClick={() => open("./shopDetails")}
+            />
           </div>
           <div className={styles.iconsContainer}>
             <Exchange alt="exchange" className={styles.icon} />

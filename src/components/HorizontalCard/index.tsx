@@ -15,12 +15,12 @@ import belt from "@/components/Footer/assets/belt.jpg";
 import brush from "./assets/brush.jpg";
 
 //SVG
-import Add from "./assets/plus.svg";
-import Remove from "./assets/minus.svg";
+
 import Delete from "./assets/x.svg";
 
 //COMPONENTS
 import Button from "../Button";
+import LogicButton from "../LogicButton";
 
 const HorizontalCard = ({
   product,
@@ -187,8 +187,6 @@ const HorizontalCard = ({
     }
   };
 
-  let [total, setTotal] = useState(0);
-  let [number, setNumber] = useState(0);
   let [display, setDisplay] = useState(true);
   return (
     <>
@@ -197,37 +195,16 @@ const HorizontalCard = ({
           <td> {functionSwitch(product)}</td>
           <td className={styles.price}>{price}</td>
           <td className={styles.quantities}>
-            <Button width="XXS">
-              <Remove
-                onClick={() => {
-                  number > 0
-                    ? (setNumber(number - 1), setTotal(total - 40))
-                    : (setNumber(0), setTotal(0));
-                }}
-              />
-            </Button>
-            <Button width="XXS" color="white">
-              {number}
-            </Button>
-            <Button width="XXS">
-              <Add
-                onClick={() => {
-                  setNumber(number + 1);
-                  setTotal(total + 40);
-                }}
-              />
-            </Button>
+            <LogicButton withTotal />
           </td>
-          <td className={styles.total}>
-            ${total}
-            <Button width="XXS">
-              <Delete
-                onClick={() => {
-                  setDisplay(false);
-                }}
-              />
-            </Button>
-          </td>
+
+          <Button width="XXS">
+            <Delete
+              onClick={() => {
+                setDisplay(false);
+              }}
+            />
+          </Button>
         </tr>
       )}
     </>
@@ -235,3 +212,35 @@ const HorizontalCard = ({
 };
 
 export default HorizontalCard;
+
+{
+  /* <td className={styles.quantities}>
+  <Button width="XXS">
+    <Remove
+      // onClick={() => {
+      //   number > 0
+      //     ? (setNumber(number - 1), setTotal(total - 40))
+      //     : (setNumber(0), setTotal(0));
+      // }}
+      onClick={minusOne}
+    />
+  </Button>
+  <Button width="XXS" color="white">
+    {number}
+  </Button>
+  <Button width="XXS">
+    <Add
+      // onClick={() => {
+      //   setNumber(number + 1);
+      //   setTotal(total + 40);
+      // }}
+      onClick={addOne}
+    />
+  </Button>
+</td>
+<td className={styles.total}>
+  ${total}
+
+ 
+</td> */
+}

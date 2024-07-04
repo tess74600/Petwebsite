@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "./fifthSection.module.scss";
+import styles from "./petLoversSection.module.scss";
 import Image from "next/image";
 
 //COMPONENTS
@@ -16,7 +16,7 @@ import seventh from "./assets/seventh.jpg";
 import ninth from "./assets/ninth.jpg";
 import eighth from "./assets/eighth.jpg";
 import kittendAndPuppy from "./assets/kittenWithPuppy.png";
-import curvedLine from "@/app/components/FirstSection/assets/curvedLine.png";
+import curvedLine from "@/app/components/HeaderSection/assets/curvedLine.png";
 import man from "./assets/faceMan.jpg";
 
 //SVG
@@ -26,11 +26,11 @@ import ChevronRight from "./assets/chevronRight.svg";
 import Add from "./assets/add.svg";
 import classNames from "classnames";
 
-const FifthSection = () => {
+const PetLoversSection = () => {
   return (
-    <div className={styles.fifthSectionContainer}>
-      <div className={styles.fifthTop}>
-        <div className={styles.fifthTopImgs}>
+    <div className={styles.petLoversSectionContainer}>
+      <div className={styles.top}>
+        <div className={styles.topImgs}>
           <div className={classNames(styles.ovfHidden, styles.first)}>
             <Image
               src={first}
@@ -52,7 +52,7 @@ const FifthSection = () => {
             />
           </div>
         </div>
-        <div className={styles.fifthTopImgs}>
+        <div className={styles.topImgs}>
           <div className={classNames(styles.ovfHidden, styles.third)}>
             <Image
               src={third}
@@ -74,7 +74,7 @@ const FifthSection = () => {
             />
           </div>
         </div>
-        <div className={styles.fifthTopImgs}>
+        <div className={styles.topImgs}>
           <div className={classNames(styles.ovfHidden, styles.fifth)}>
             <Image
               src={fifth}
@@ -89,7 +89,7 @@ const FifthSection = () => {
             </div>
           </div>
         </div>
-        <div className={styles.fifthTopImgs}>
+        <div className={styles.topImgs}>
           <div className={classNames(styles.ovfHidden, styles.sixth)}>
             <Image
               src={sixth}
@@ -111,7 +111,7 @@ const FifthSection = () => {
             />
           </div>
         </div>
-        <div className={styles.fifthTopImgs}>
+        <div className={styles.topImgs}>
           <div className={classNames(styles.ovfHidden, styles.first)}>
             <Image
               src={eighth}
@@ -135,7 +135,7 @@ const FifthSection = () => {
         </div>
       </div>
 
-      <div className={styles.fifthCentral}>
+      <div className={styles.central}>
         <div className={styles.textContainer}>
           <h2>What pet lovers say about us?</h2>
           <p>
@@ -182,12 +182,12 @@ const FifthSection = () => {
             width={1920}
             height={1434}
             alt="a kitten with a puppy"
-            id={styles.fifthSectionImg}
+            id={styles.petLoversSectionImg}
           />
           <Paw alt="paw" id={styles.paw} />
         </div>
       </div>
-      <div className={styles.fifthBottom}>
+      <div className={styles.bottom}>
         <div className={styles.titleContainer}>
           <h3>Latest Post</h3>
           <Button color="black" withBorder variant="ovale" width="M">
@@ -199,4 +199,4 @@ const FifthSection = () => {
   );
 };
 
-export default FifthSection;
+export default PetLoversSection;

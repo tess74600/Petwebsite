@@ -1,6 +1,6 @@
 "use client";
 import React, { useRef, useState } from "react";
-import styles from "./header.module.scss";
+import styles from "./navbar.module.scss";
 import Link from "next/link";
 
 // SVG
@@ -9,7 +9,7 @@ import Search from "./assets/search.svg";
 import Heart from "./assets/heart1.svg";
 import Shopping from "./assets/shopping-cart 1.svg";
 import Lines from "./assets/lines.svg";
-const Header = () => {
+const Navbar = () => {
   const [isClosed, setIsClosed] = useState(false);
   const toggleMenu = () => {
     setIsClosed(!isClosed);
@@ -17,7 +17,7 @@ const Header = () => {
 
   return (
     <>
-      <header className={styles.headerContainer}>
+      <div className={styles.navBarContainer}>
         <div
           className={
             isClosed
@@ -89,9 +89,9 @@ const Header = () => {
 
           <Lines alt="menu" className={styles.menuIcons} onClick={toggleMenu} />
         </div>
-      </header>
+      </div>
     </>
   );
 };
 
-export default Header;
+export default Navbar;

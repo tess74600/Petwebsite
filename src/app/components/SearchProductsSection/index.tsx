@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "./secondSection.module.scss";
+import styles from "./searchProductsSection.module.scss";
 import Image from "next/image";
 import classNames from "classnames";
 
@@ -17,16 +17,15 @@ import PawVector from "@/components/Footer/assets/paw.svg";
 import ButtonArrow from "./assets/buttonArrow.svg";
 import LeftArrow from "./assets/leftArrow.svg";
 import RightArrow from "./assets/rightArrow.svg";
-import Paw from "@/app/components/FirstSection/assets/paws1.svg";
-// import Paw from "./../FirstSection/assets/paws1.svg";
+import Paw from "@/app/components/HeaderSection/assets/paws1.svg";
 
 // COMPONENTS
 import Button from "@/components/Button";
 import GlobalContainer from "../GlobalContainer";
 
-const SecondSection = () => {
+const SearchProductsSection = () => {
   return (
-    <div className={styles.secondSectionContainer}>
+    <div className={styles.searchProductsSectionContainer}>
       <div className={styles.whiteContainer}>
         <GlobalContainer>
           <div className={styles.productCategory}>
@@ -176,4 +175,4 @@ const SecondSection = () => {
   );
 };
 
-export default SecondSection;
+export default SearchProductsSection;

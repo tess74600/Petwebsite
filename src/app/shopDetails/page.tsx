@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 import styles from "./shopDetails.module.scss";
 import Image from "next/image";
@@ -14,18 +15,25 @@ import Facebook from "./assets/facebook.svg";
 import Instagram from "./assets/instagram.svg";
 import Twitter from "./assets/twitter.svg";
 import Linkedin from "./assets/linkedin.svg";
-
+import StarGrey from "./assets/StarGrey.svg";
+import Star from "./assets/Staryellow.svg";
+import Heart from "./assets/heart.svg";
 //IMG
 import leftImg from "./assets/leftImg.jpg";
-import greenBowl from "./assets/greenBowl.jpg";
-import redBowl from "./assets/redBowl.jpg";
+import greenBowl from "./assets/greenBowl-removebg-preview.png";
+import redBowl from "./assets/redBowl-removebg-preview.png";
 import Button from "@/components/Button";
+import LogicButton from "@/components/LogicButton";
+import Link from "next/link";
 const ShopDetails = () => {
   return (
-    <div>
+    <div className={styles.container}>
       <GlobalContainer>
         <div className={styles.nav}>
-          <p> Home</p> &#8250; <p>Shop Standard With Details</p>
+          <Link href="/">
+            <a>Home</a>{" "}
+          </Link>{" "}
+          &#8250; <p>Shop Standard With Details</p>
         </div>
         <div className={styles.top}>
           <div className={styles.imgContainer}>
@@ -34,15 +42,55 @@ const ShopDetails = () => {
             </div>
             <Image
               src={redBowl}
-              width={4800}
-              height={4000}
+              width={547}
+              height={456}
               alt="red steel bowl"
               className={styles.topImg}
             />
+            <div className={styles.bowlsContainer}>
+              <div className={styles.bowlContainer}>
+                <Image
+                  src={redBowl}
+                  width={547}
+                  height={456}
+                  alt="green steel bowl"
+                  className={styles.absoluteImg}
+                />
+              </div>
+              <div className={styles.bowlContainer}>
+                <Image
+                  src={greenBowl}
+                  width={547}
+                  height={456}
+                  alt="red steel bowl"
+                  className={styles.absoluteImg}
+                />
+              </div>
+              <div className={styles.bowlContainer}>
+                <Image
+                  src={greenBowl}
+                  width={547}
+                  height={456}
+                  alt="green steel bowl"
+                  className={styles.absoluteImg}
+                />
+              </div>
+            </div>
           </div>
           <div className={styles.textContainer}>
+            <h5>Sale 20% off</h5>
             <h2>Steel paw bone printed bowl</h2>
-            <div></div>
+            <div className={styles.likesContainer}>
+              <span>
+                <Star />
+                <Star />
+                <Star />
+                <StarGrey />
+                <StarGrey />
+              </span>
+              <span>4.7 Rating </span>
+              (5 customer reviews)
+            </div>
             <p>
               Lorem Ipsum is simply dummy text of the printing and typesetting
               industry. Lorem Ipsum has been the industry's standard dummy text
@@ -59,32 +107,52 @@ const ShopDetails = () => {
               </div>
               <div>
                 <h3>Quantity</h3>
-                <div className={styles.buttonsContainer}></div>
+                <LogicButton withTotal={false} />
               </div>
             </div>
-            <div className="addToCart"></div>
+            <div className={styles.buttonsContainer}>
+              <Button color="black" variant="rectangle" width="S">
+                ADD TO CART
+              </Button>
+              <Button
+                color="transparent"
+                withBorder
+                variant="rectangle"
+                width="S"
+              >
+                <Heart /> Add To Wishlist
+              </Button>
+            </div>
             <div className={styles.informations}>
               <div>
                 <h4>SKU:</h4>
-                <h5>PRT584E63A</h5>
+                <span>PRT584E63A</span>
               </div>
               <div>
                 <h4>Category:</h4>
-                <pre>
+                <span>
                   Dog Bowls, Accessories, Dog Training, Health, Dog Food,
-                </pre>
+                </span>
               </div>
               <div>
                 <h4>Tags:</h4>
-                <pre>Bowls, Bags, Clothe, Toothbrushes,</pre>
+                <span>Bowls, Bags, Clothe, Toothbrushes,</span>
               </div>
               <div>
                 <h4>Share:</h4>
                 <div className={styles.socialsLogos}>
-                  <Facebook />
-                  <Linkedin />
-                  <Instagram />
-                  <Twitter />
+                  <a href="https://www.facebook.com">
+                    <Facebook />
+                  </a>
+                  <a href="https://www.linkedin.com">
+                    <Linkedin />
+                  </a>
+                  <a href="https://www.instagram.com">
+                    <Instagram />
+                  </a>
+                  <a href="https://www.twitter.com">
+                    <Twitter />
+                  </a>
                 </div>
               </div>
             </div>
@@ -183,11 +251,10 @@ const ShopDetails = () => {
             <Card title="Pet Bed For Dog" source="bed" />
 
             <Card title="Dog Chew Toys" source="toy" />
-            {/* <Card title="The Bone Dog Toy" source="bone" />
-            <Card title="Dog Rope Combo" source="rope" /> */}
           </div>
         </div>
-        <div className={styles.right}>
+
+        <div className={styles.rightVerticalSideBar}>
           <ul>
             <li>
               <a href="https://www.instagram.com">INSTAGRAM</a>

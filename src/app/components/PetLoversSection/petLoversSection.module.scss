@@ -1,4 +1,4 @@
-.fifthSectionContainer {
+.petLoversSectionContainer {
   border-top: 1px solid var(--black400);
   padding: var(--padding-2xl);
   @media screen and (max-width: 1440px) {
@@ -8,13 +8,13 @@
   @media screen and (max-width: 1224px) {
     padding: var(--padding-sm);
   }
-  .fifthTop {
+  .top {
     width: 100%;
     display: flex;
     @media screen and (max-width: 1000px) {
       display: none;
     }
-    .fifthTopImgs {
+    .topImgs {
       display: flex;
       flex-direction: column;
       width: 100%;
@@ -93,7 +93,7 @@
   }
 }
 
-.fifthCentral {
+.central {
   background: var(--white400);
   margin-top: 166px;
   border-radius: var(--bdRadius-md);
@@ -190,7 +190,7 @@
       display: none;
     }
 
-    #fifthSectionImg {
+    #petLoversSectionImg {
       position: absolute;
       bottom: -50px;
       left: -100px;
@@ -209,7 +209,7 @@
     }
   }
 }
-.fifthBottom {
+.bottom {
   padding-top: 88px;
   .titleContainer {
     display: flex;

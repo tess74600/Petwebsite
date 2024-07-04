@@ -23,8 +23,7 @@ const CartPage = () => {
               <tr>
                 <th>Product</th>
                 <th>Price</th>
-                <th>Quantity</th>
-                <th>Subtotal</th>
+                <th>Quantity-Subtotal</th>
               </tr>
             </thead>
             <tbody className={styles.productsContainer}>

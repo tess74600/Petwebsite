@@ -1,22 +1,22 @@
 import React from "react";
 
-import FirstSection from "./components/FirstSection";
-import SecondSection from "./components/SecondSection";
-import ThirdSection from "./components/ThirdSection";
-import FourthSection from "./components/FourthSection";
-import FifthSection from "./components/FifthSection";
 import GlobalContainer from "./components/GlobalContainer";
+import LogoSection from "./components/LogoSection";
+import HeaderSection from "./components/HeaderSection";
+import SearchProductsSection from "./components/SearchProductsSection";
+import DisplayProductsSection from "./components/DisplayProductsSection";
+import PetLoversSection from "./components/PetLoversSection";
 
 const Home = () => {
   return (
     <>
-      <FirstSection />
-      <SecondSection />
-      <ThirdSection />
+      <HeaderSection />
+      <SearchProductsSection />
+      <LogoSection />
       <GlobalContainer>
-        <FourthSection />
+        <DisplayProductsSection />
       </GlobalContainer>
-      <FifthSection />
+      <PetLoversSection />
     </>
   );
 };
